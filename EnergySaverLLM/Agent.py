@@ -169,7 +169,7 @@ Please try to find a new way (coding) to answer the question."""
 # This approach replicate the evaluation section of the OptiGuide paper.
 
 
-def run_with_exec(src_code: str) -> Union[str, Exception]:
+def _run_with_exec(src_code: str) -> Union[str, Exception]:
     """Run the code snippet with exec.
 
     Args:
@@ -183,8 +183,7 @@ def run_with_exec(src_code: str) -> Union[str, Exception]:
     locals_dict = {}
     locals_dict.update(globals())
     locals_dict.update(locals())
-    print(locals_dict)
-
+    
     timeout = Timeout(
         60,
         TimeoutError("This is a timeout exception, in case "

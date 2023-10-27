@@ -3,6 +3,9 @@ from gurobipy import GRB, Model
 import json
 
 # Fetching data from JSON file
+
+params_filepath = "EnergySaverLLM/Model/params/EVCharging.json"
+
 stored_params = json.load(open(params_filepath))
 
 start_charge_level = stored_params['start_charge']
