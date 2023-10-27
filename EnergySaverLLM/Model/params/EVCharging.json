@@ -29,6 +29,9 @@
     "car_model": "Model 3",
     "car_model_desc": "Car model name",
 
+    "start_charge": 0.20,
+    "start_charge_desc": "Start charge level",
+
     "default_end_charge": 0.90,
     "default_end_charge_desc": "End charge level default value",
 

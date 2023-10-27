@@ -1,13 +1,11 @@
 from datetime import datetime
 from gurobipy import GRB, Model
 import json
-from utils import getCurrentBattery
-
 
 # Fetching data from JSON file
-stored_params = json.load(open('params/EVCharging.json'))
+stored_params = json.load(open(params_filepath))
 
-start_charge_level = getCurrentBattery()
+start_charge_level = stored_params['start_charge']
 end_charge_level = stored_params['default_end_charge']
 
 total_battery_capacity = stored_params['battery_capacity']*1000
@@ -40,7 +38,6 @@ if(end_time_H <= curr_time_H):
     carbon_costs_next = [(str(int(x)+24) , y) for x, y in carbon_costs_next.items()]
     carbon_costs.update(carbon_costs_next)
 
-elec_costs = elec_costs
 
 max_elec_cost = stored_params['max_energy_cost']
 carbon_cost_weight = stored_params['carbon_cost_weight']
@@ -53,9 +50,8 @@ keys = elec_costs.keys()
 # Create a new model
 model = Model("EVCharging")
 
-# OPTIGUIDE DATA CODE GOES HERE
+# LLM GENERATED DATA CODE GOES HERE
 
-print(str(len(upper_bounds))+"\n")
 # Create variables
 x = model.addVars(keys,
                   vtype = GRB.INTEGER,
@@ -76,17 +72,23 @@ model.addConstr(sum(x[i] for i in keys) == this_charge_WH)
 
 # Optimize model
 model.optimize()
-for v in model.getVars():
-    print(f"{v.varName} = {v.x}\n")
+m = model
 
-# OPTIGUIDE CONSTRAINT CODE GOES HERE
+# LLM GENERATED CONSTRAINT CODE GOES HERE
 
-Solve
+# Solve
 m.update()
 model.optimize()
 
-print(time.ctime())
 if m.status == GRB.OPTIMAL:
-    print(f'Optimal cost: {m.objVal}')
+    print(f'Optimal Charging Schedule:')
+    all_vars = model.getVars()
+    values = model.getAttr("X", all_vars)
+    names = model.getAttr("VarName", all_vars)
+
+    for i, time_str in enumerate(keys):
+        if(values[i]>0):
+            print(f"Scheduled consumption at Hour {time_str} : {int(values[i]/1000):d} KWH")
+
 else:
-    print("Not solved to optimality. Optimization status:", m.status)
+    print("Not solved to optimality. Optimization status:", model.status)
