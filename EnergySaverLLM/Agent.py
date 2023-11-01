@@ -10,6 +10,8 @@ from flaml.autogen.agentchat.agent import Agent
 from flaml.autogen.code_utils import extract_code
 
 # %% System Messages
+# JSON_SYSTEM_MSG = """You are a chatbot to write JSON formatted if new parameters are required"""
+
 WRITER_SYSTEM_MSG = """You are a chatbot to:
 (1) write Python code to answer users questions for Electric Vehicle Charging Code
 ;
@@ -17,6 +19,9 @@ WRITER_SYSTEM_MSG = """You are a chatbot to:
 
 --- SOURCE CODE ---
 {source_code}
+
+--- JSON ---
+{json} 
 
 --- DOC STR ---
 {doc_str}
@@ -60,6 +65,7 @@ class ChargingAgent(AssistantAgent):
                  source_code,
                  doc_str="",
                  example_qa="",
+                 json="",
                  debug_times=3,
                  **kwargs):
         """
@@ -83,6 +89,7 @@ class ChargingAgent(AssistantAgent):
         self._doc_str = doc_str
         self._example_qa = example_qa
         self._origin_execution_result = _run_with_exec(source_code)
+        self._json = json
         self._writer = AssistantAgent("writer", llm_config=self.llm_config)
         self._safeguard = AssistantAgent("safeguard",
                                          llm_config=self.llm_config)
@@ -108,6 +115,7 @@ class ChargingAgent(AssistantAgent):
                 doc_str=self._doc_str,
                 example_qa=self._example_qa,
                 execution_result=self._origin_execution_result,
+                json=self._json,
             ) + user_chat_history)
             safeguard_sys_msg = SAFEGUARD_SYSTEM_MSG.format(
                 source_code=self._source_code) + user_chat_history
