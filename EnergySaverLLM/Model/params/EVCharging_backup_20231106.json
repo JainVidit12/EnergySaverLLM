@@ -63,11 +63,11 @@
     "car_model_desc": "Car model name",
     "start_charge": 0.2,
     "start_charge_desc": "Start charge level",
-    "end_charge": 1.0,
+    "end_charge": 0.8,
     "end_charge_desc": "End charge level default value",
     "max_power": 11.7,
     "max_power_desc": "max charge power in KW",
     "battery_capacity": 70,
     "battery_capacity_desc": "Battery capacity for car model and make in KWH",
-    "end_charge_time": 9
+    "end_charge_time": 5
 }

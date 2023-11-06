@@ -9,7 +9,7 @@ params_filepath = "EnergySaverLLM/Model/params/EVCharging.json"
 stored_params = json.load(open(params_filepath))
 
 start_charge_level = stored_params['start_charge']
-end_charge_level = stored_params['default_end_charge']
+end_charge_level = stored_params['end_charge']
 
 total_battery_capacity = stored_params['battery_capacity']
 
