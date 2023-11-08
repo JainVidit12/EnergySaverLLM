@@ -14,7 +14,6 @@ from flaml.autogen.agentchat.agent import Agent
 from flaml.autogen.code_utils import extract_code
 
 # %% System Messages
-# JSON_SYSTEM_MSG = """You are a chatbot to write JSON formatted if new parameters are required"""
 
 WRITER_SYSTEM_MSG = """You are a chatbot to 
 (1) write JSON to edit parameters as per user request for Electric Vehicle Charging.
@@ -102,12 +101,11 @@ class ChargingAgent(AssistantAgent):
             self._writer.reset()
             self._interpreter.reset()
             self._debug_times_left = self.debug_times
-            # self._success = False
-            # Step 2-6: code, safeguard, and interpret
+           
             self.initiate_chat(self._writer, message=CODE_PROMPT)
             
-            # step 7: receive interpret result
             _, new_params = extract_code(self.last_message(self._writer)["content"])[0]
+            
             
             self._json_str = _insert_params(self._json_str, new_params)
             _replace_json(self._json_str, self._json_filepath)
@@ -120,7 +118,6 @@ class ChargingAgent(AssistantAgent):
             else:
                 reply = "Sorry I cannot interpret this result."
             
-            # Finally, step 8: send reply to user
             return reply
             
 # %% Helper functions to edit and run code.
@@ -183,7 +180,7 @@ def _run_with_exec(src_code: str) -> Union[str, Exception]:
 
 def _replace_json(json_str: str, json_filepath: str):
     [json_file_loc, prev_json_filename] = json_filepath.rsplit('/', 1)
-    new_json_filename = prev_json_filename.replace('.json', '_backup_'+datetime.datetime.now().strftime('%Y%m%d')+'.json')
+    new_json_filename = prev_json_filename.replace('.json', '_backup_'+datetime.datetime.now().strftime('%Y%m%d%H%M%S')+'.json')
 
     new_json_filepath = json_file_loc + '/' + new_json_filename
     os.rename(json_filepath, new_json_filepath)
@@ -206,16 +203,13 @@ def _insert_params(src_json_str: str, new_params: str) -> str:
     """
 
     json_dict = json.loads(src_json_str)
-    for param_change in new_params.split(','):
-        [left, right] = param_change.split(':', 1)
-        left = left.replace('\n','')
-        try:
-            json_dict[left[1:-1]] = int(right)
-        except:
-            try:
-                json_dict[left[1:-1]] = float(right)
-            except:
-                json_dict[left[1:-1]] = right
+    
+    if new_params[0] != '{':
+        new_params = '{' + new_params + '}'
+
+    changed_json_dict = json.loads(new_params)
+    for key, value in changed_json_dict.items():
+        json_dict[key] = value
         
     return json.dumps(json_dict, indent = 4)
 
