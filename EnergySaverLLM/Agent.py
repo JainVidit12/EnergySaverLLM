@@ -8,6 +8,7 @@ import os
 from eventlet.timeout import Timeout
 from gurobipy import GRB
 from termcolor import colored
+import csv
 
 from flaml.autogen.agentchat import AssistantAgent
 from flaml.autogen.agentchat.agent import Agent
@@ -46,7 +47,8 @@ class ChargingAgent(AssistantAgent):
                  source_code,
                  example_qa="",
                  json_filepath="",
-                 debug_times=3,
+                 bench_results_filepath : str = None,
+                 que_hashcode : str = None,
                  **kwargs):
         """
         Args:
@@ -54,8 +56,6 @@ class ChargingAgent(AssistantAgent):
             source_code (str): The original source code to run.
             example_qa (str): training examples for in-context learning.
             json (str): The original JSON parameters file.
-            debug_times (int): number of debug tries we allow for LLM to answer
-                each question.
             **kwargs (dict): Please refer to other kwargs in
                 [AssistantAgent](assistant_agent#__init__) and
                 [ResponsiveAgent](responsive_agent#__init__).
@@ -66,6 +66,8 @@ class ChargingAgent(AssistantAgent):
         self._example_qa = example_qa
         self._origin_execution_result = _run_with_exec(source_code)
         self._json_filepath = json_filepath
+        self._bench_results_filepath = bench_results_filepath
+        self._que_hashcode = que_hashcode
         
         with open(json_filepath, 'r') as f:
             self._json_str = f.read()
@@ -73,8 +75,11 @@ class ChargingAgent(AssistantAgent):
         self._writer = AssistantAgent("writer", llm_config=self.llm_config)
         self._interpreter = AssistantAgent("interpreter",
                                          llm_config=self.llm_config)
-        self._debug_times_left = self.debug_times = debug_times
-        self._success = False
+        
+        self._bench = False
+        if self._bench_results_filepath is not None:
+            self._bench = True
+        
 
     def generate_reply(
         self,
@@ -100,7 +105,7 @@ class ChargingAgent(AssistantAgent):
             self._interpreter.update_system_message(interpreter_sys_msg)
             self._writer.reset()
             self._interpreter.reset()
-            self._debug_times_left = self.debug_times
+            
            
             self.initiate_chat(self._writer, message=CODE_PROMPT)
             
@@ -110,6 +115,13 @@ class ChargingAgent(AssistantAgent):
             self._json_str = _insert_params(self._json_str, new_params)
             _replace_json(self._json_str, self._json_filepath)
             execution_rst = _run_with_exec(self._source_code)
+            
+            if self._bench:
+                objVal = -1
+                if 'Optimization problem solved' in execution_rst:
+                    objVal = int(float(execution_rst.split(' ')[-1]))
+                saveResult(self._bench_results_filepath, self._que_hashcode, objVal)
+            
             print(colored(str(execution_rst), "yellow"))
             if type(execution_rst) in [str, int, float]:
                 self.initiate_chat(self._interpreter, 
@@ -177,6 +189,16 @@ def _run_with_exec(src_code: str) -> Union[str, Exception]:
     return ans
 
 
+def saveResult(filepath : str, hashcode : str, val : int):
+    
+    if not os.path.isfile(filepath):
+        with open(filepath, 'w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow(['HashCode','Output'])
+    
+    with open(filepath, 'w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow([hashcode, val])
 
 def _replace_json(json_str: str, json_filepath: str):
     [json_file_loc, prev_json_filename] = json_filepath.rsplit('/', 1)
@@ -190,7 +212,7 @@ def _replace_json(json_str: str, json_filepath: str):
 
 
 
-def _insert_params(src_json_str: str, new_params: str) -> str:
+def _insert_params(src_json_str : str, new_params : str) -> str:
     """change JSON params.
 
 
@@ -214,7 +236,25 @@ def _insert_params(src_json_str: str, new_params: str) -> str:
     return json.dumps(json_dict, indent = 4)
 
 
-# %% Prompt for OptiGuide
+def reset_params_file(curr_path : str, backup_path : str):
+    """change JSON params.
+
+
+    Args:
+        curr_path (str): the file used in code
+        backup_path (str): backup file
+
+    Returns:
+        json: the full json after replacement.
+    """
+    os.remove(curr_path)
+
+    with open(backup_path, 'r') as f:
+            contents = f.read()
+
+    with open(curr_path, "w") as text_file:
+        text_file.write(contents)
+
 CODE_PROMPT = """
 Answer JSON:
 """

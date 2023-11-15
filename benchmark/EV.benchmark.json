@@ -1,0 +1,11 @@
+{
+  "questions": [
+    {
+      "QUESTION": "Increase Electricity cost by 30%",
+      "hash": "358c01370edc50fed12c7bc770435e3b03bad331289ff28810957fa375e878bc",
+      "GT EXEC RESULT": 2612.0
+    }
+    
+  ],
+  "code_path": "/OptiGuide/benchmark/application/coffee.py"
+}

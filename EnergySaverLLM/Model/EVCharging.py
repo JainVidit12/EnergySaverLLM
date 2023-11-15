@@ -17,7 +17,7 @@ this_charge_KWH = (end_charge_level-start_charge_level)*total_battery_capacity
 
 max_power_KW = stored_params['max_power']
 
-curr_time_H = datetime.now().hour + 1
+curr_time_H = 19
 end_time_H = stored_params["end_charge_time"]
 
 elec_costs = [(x , y) for x, y in stored_params['elec_cost'].items()]
