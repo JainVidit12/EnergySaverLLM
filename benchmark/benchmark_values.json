@@ -1,0 +1,8 @@
+{
+    "carbon_cost_weight": [0.2, 0.4],
+    "max_energy_cost": [10, 15, 20, 25, 30, 35, 40, 45],
+    "end_charge": [0.6, 0.7, 0.9, 1.0],
+    "max_power": [10, 11, 12],
+    "battery_capacity": [50, 60, 80],
+    "end_charge_time": [6, 7, 8]
+}
