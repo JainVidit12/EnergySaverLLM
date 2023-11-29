@@ -47,8 +47,6 @@ class ChargingAgent(AssistantAgent):
                  source_code,
                  example_qa="",
                  json_filepath="",
-                 bench_results_filepath : str = None,
-                 que_hashcode : str = None,
                  **kwargs):
         """
         Args:
@@ -66,8 +64,6 @@ class ChargingAgent(AssistantAgent):
         self._example_qa = example_qa
         self._origin_execution_result = _run_with_exec(source_code)
         self._json_filepath = json_filepath
-        self._bench_results_filepath = bench_results_filepath
-        self._que_hashcode = que_hashcode
         
         with open(json_filepath, 'r') as f:
             self._json_str = f.read()
@@ -75,10 +71,6 @@ class ChargingAgent(AssistantAgent):
         self._writer = AssistantAgent("writer", llm_config=self.llm_config)
         self._interpreter = AssistantAgent("interpreter",
                                          llm_config=self.llm_config)
-        
-        self._bench = False
-        if self._bench_results_filepath is not None:
-            self._bench = True
         
 
     def generate_reply(
@@ -116,11 +108,6 @@ class ChargingAgent(AssistantAgent):
             _replace_json(self._json_str, self._json_filepath)
             execution_rst = _run_with_exec(self._source_code)
             
-            if self._bench:
-                objVal = -1
-                if 'Optimization problem solved' in execution_rst:
-                    objVal = int(float(execution_rst.split(' ')[-1]))
-                saveResult(self._bench_results_filepath, self._que_hashcode, objVal)
             
             print(colored(str(execution_rst), "yellow"))
             if type(execution_rst) in [str, int, float]:
@@ -238,8 +225,6 @@ def _insert_params(src_json_str : str, new_params : str) -> str:
 
 def reset_params_file(curr_path : str, backup_path : str):
     """change JSON params.
-
-
     Args:
         curr_path (str): the file used in code
         backup_path (str): backup file
@@ -254,6 +239,20 @@ def reset_params_file(curr_path : str, backup_path : str):
 
     with open(curr_path, "w") as text_file:
         text_file.write(contents)
+
+def clear_param_backups(curr_path : str):
+    """change JSON params.
+    Args:
+        curr_path (str): the file used in code
+
+    Returns:
+        json: the full json after replacement.
+    """
+    path = curr_path[:curr_path.rindex('/')]+'/'
+    for filename in os.listdir(path):
+        if 'backup' in filename:
+            os.remove(path+filename)
+
 
 CODE_PROMPT = """
 Answer JSON:
