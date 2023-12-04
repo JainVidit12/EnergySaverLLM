@@ -47,6 +47,7 @@ class ChargingAgent(AssistantAgent):
                  source_code,
                  example_qa="",
                  json_filepath="",
+                 evaluate=False,
                  **kwargs):
         """
         Args:
@@ -64,6 +65,7 @@ class ChargingAgent(AssistantAgent):
         self._example_qa = example_qa
         self._origin_execution_result = _run_with_exec(source_code)
         self._json_filepath = json_filepath
+        self._evaluate = evaluate
         
         with open(json_filepath, 'r') as f:
             self._json_str = f.read()
@@ -103,13 +105,17 @@ class ChargingAgent(AssistantAgent):
             
             _, new_params = extract_code(self.last_message(self._writer)["content"])[0]
             
-            
+            if self._evaluate:
+                return ""
+
             self._json_str = _insert_params(self._json_str, new_params)
             _replace_json(self._json_str, self._json_filepath)
             execution_rst = _run_with_exec(self._source_code)
             
             
             print(colored(str(execution_rst), "yellow"))
+
+            
             if type(execution_rst) in [str, int, float]:
                 self.initiate_chat(self._interpreter, 
                                     message=INTERPRETER_PROMPT.format(execution_rst=execution_rst))
