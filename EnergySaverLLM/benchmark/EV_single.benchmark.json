@@ -1,0 +1,474 @@
+[
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.85\n```",
+    "prompt": "Increase the weightage of carbon emissions cost in total cost calculation to 0.85."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.7\n```",
+    "prompt": "Increase the weight of carbon cost in total cost calculation to 0.7."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.35\n```",
+    "prompt": "Increase the weightage of carbon cost in total cost calculation to 0.35."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.15\n```",
+    "prompt": "Reduce the weightage of carbon cost in total cost calculation to 15%."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.25\n```",
+    "prompt": "Lower the importance of carbon cost in the total cost calculation to 25%."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.5\n```",
+    "prompt": "Increase the weightage of carbon cost in total cost calculation to 0.5."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.2\n```",
+    "prompt": "Adjust the weightage of the carbon cost in the total cost to 20%."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.75\n```",
+    "prompt": "Increase the weight of carbon cost in total cost calculation to 0.75."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 1.1\n```",
+    "prompt": "Increase the weightage for carbon cost in the total cost calculation to 1.1"
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.05\n```",
+    "prompt": "Lessen the weightage of carbon emissions in my total cost to 0.05."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.1\n```",
+    "prompt": "I want to reduce the weightage of carbon cost in total cost calculation to 10%."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.95\n```",
+    "prompt": "Increase the weight of carbon cost in total cost calculation to 0.95."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.6\n```",
+    "prompt": "Increase the weight of carbon cost in total cost calculation to 0.6."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.8\n```",
+    "prompt": "Increase the weightage of the carbon cost in the total cost to 0.8."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 1.15\n```",
+    "prompt": "Increase the weight for carbon cost in the total cost calculation to 1.15."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.4\n```",
+    "prompt": "Please increase the weightage given to carbon cost in total cost calculation to 0.4."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.9\n```",
+    "prompt": "Increase the carbon cost weight to 0.9."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 1.0\n```",
+    "prompt": "Increase the weight of carbon cost in total cost calculation to 1.0."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.3\n```",
+    "prompt": "Adjust the importance of carbon emissions cost to be slightly less, making it 30% of the total cost."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.65\n```",
+    "prompt": "Increase the weight of carbon cost in the total cost calculation to 0.65."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 85\n```",
+    "prompt": "Increase the maximum electricity cost allowed in one charge cycle to 85 USD."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 97\n```",
+    "prompt": "Increase the maximum electricity cost allowed in one charge cycle to $97."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 22\n```",
+    "prompt": "Increase the maximum electricity cost allowed in one charge cycle to $22."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 41\n```",
+    "prompt": "Increase the maximum electricity cost allowed in one charge cycle to $41."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 20\n```",
+    "prompt": "Increase the maximum electricity cost allowed in one charge cycle to $20."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 31\n```",
+    "prompt": "Increase the maximum electricity cost allowed in one charge cycle to 31 USD."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 30\n```",
+    "prompt": "Increase the maximum electricity cost allowed in one charge cycle to $30."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 42\n```",
+    "prompt": "Increase the maximum electricity cost allowed in one charge cycle to 42 USD."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 92\n```",
+    "prompt": "Increase the maximum electricity cost allowed in one charge cycle to $92."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 13\n```",
+    "prompt": "Reduce my charging budget to $13 per cycle."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 73\n```",
+    "prompt": "Increase the maximum energy cost allowed in a charge cycle to 73 USD."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 49\n```",
+    "prompt": "Increase the maximum electricity cost allowed in one charge cycle to $49."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 78\n```",
+    "prompt": "Update the max electricity cost for one charge cycle to $78."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 50\n```",
+    "prompt": "Increase the maximum electricity cost allowed in one charge cycle to 50 USD."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 64\n```",
+    "prompt": "Increase the maximum electricity cost allowed in one charge cycle to $64."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 37\n```",
+    "prompt": "Increase the maximum allowed electricity cost for a charge cycle up to $37."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 38\n```",
+    "prompt": "Increase the maximum electricity cost allowed in one charge cycle to 38 USD."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 6\n```",
+    "prompt": "Set the maximum electricity cost during one charge cycle to $6."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 59\n```",
+    "prompt": "Increase the maximum electricity cost allowed in one charge cycle to 59 USD."
+  },
+  {
+    "json_str": "```JSON\n\"max_energy_cost\": 12\n```",
+    "prompt": "I'd like to limit the electricity cost of the single charging cycle to 12 USD."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 0.35\n```",
+    "prompt": "I want to charge my car only till 35% battery level."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 1.15\n```",
+    "prompt": "Overcharge the car to 115% of its battery capacity."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 0.8\n```",
+    "prompt": "I would like to increase the end charge level to 80%."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 1.0\n```",
+    "prompt": "I want the vehicle to be charged till the battery is 100% full."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 1.05\n```",
+    "prompt": "Overcharge the car to 105% of its capacity."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 0.85\n```",
+    "prompt": "Charge the car to 85% charge level."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 0.45\n```",
+    "prompt": "Charge the car to 45% of the battery capacity."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 0.55\n```",
+    "prompt": "Charge the car till it reaches 55% of its battery capacity."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 0.95\n```",
+    "prompt": "Charge the car until it reaches 95% battery capacity."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 0.2\n```",
+    "prompt": "Reduce the ending charge level to 20%."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 0.3\n```",
+    "prompt": "Charge the car up to 30% of the battery capacity."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 0.75\n```",
+    "prompt": "Charge the car up to 75% power."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 0.6\n```",
+    "prompt": "Charge the car until it is 60% full."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 1.1\n```",
+    "prompt": "Overcharge the car a little more than full capacity."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 0.9\n```",
+    "prompt": "Charge the car up to 90% of battery capacity."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 0.7\n```",
+    "prompt": "Charge the car up to 70% of its battery capacity."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 0.4\n```",
+    "prompt": "Only charge the car to 40% battery capacity."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 0.65\n```",
+    "prompt": "Charge the car to 65% battery level."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 0.25\n```",
+    "prompt": "Charge the car to 25% charge."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge\": 0.5\n```",
+    "prompt": "Charge the car till it's 50% full."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 19.8\n```",
+    "prompt": "Increase the maximum charge power to 19.8 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 17.0\n```",
+    "prompt": "Increase the maximum charging power to 17 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 14.3\n```",
+    "prompt": "Increase the maximum charge power to 14.3 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 10.7\n```",
+    "prompt": "Lower the maximum charging power to 10.7 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 15.8\n```",
+    "prompt": "Increase the maximum charging power to 15.8 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 11.9\n```",
+    "prompt": "Update the max charge power to 11.9 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 18.9\n```",
+    "prompt": "Increase the maximum charge power to 18.9 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 14.9\n```",
+    "prompt": "Increase the maximum charge power to 14.9 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 14.2\n```",
+    "prompt": "Change the maximum charge power to 14.2 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 15.4\n```",
+    "prompt": "Increase the maximum charge power to 15.4 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 10.0\n```",
+    "prompt": "The maximum charge power for the EV has been updated to 10 kW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 19.6\n```",
+    "prompt": "Increase the maximum charging power capacity to 19.6 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 10.6\n```",
+    "prompt": "Change the maximum charge power to 10.6 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 14.7\n```",
+    "prompt": "Increase the max charging power to 14.7 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 19.2\n```",
+    "prompt": "Update the maximum charge power to 19.2 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 10.3\n```",
+    "prompt": "Lower the maximum charging power to 10.3 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 13.4\n```",
+    "prompt": "Change the maximum charge power to 13.4 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 16.2\n```",
+    "prompt": "Increase the maximum charging power to 16.2 KW."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 17.1\n```",
+    "prompt": "Update the parameter \"max_power\" to 17.1."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 16.9\n```",
+    "prompt": "Increase the maximum charge power to 16.9 KW."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 25\n```",
+    "prompt": "Change the battery capacity to 25 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 70\n```",
+    "prompt": "Increase the battery capacity to 70 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 40\n```",
+    "prompt": "Change the battery_capacity parameter to 40."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 45\n```",
+    "prompt": "Opt for a battery capacity of 45 KWH for my vehicle."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 90\n```",
+    "prompt": "Upgrade the battery capacity of the car to 90 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 85\n```",
+    "prompt": "Update the battery capacity parameter to 85 kWh."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 50\n```",
+    "prompt": "Update the car's battery capacity to 50 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 55\n```",
+    "prompt": "Battery capacity is updated to 55 kWh."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 75\n```",
+    "prompt": "Change the battery capacity for the car to 75 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 65\n```",
+    "prompt": "Reduce the battery capacity to 65 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 60\n```",
+    "prompt": "Reduce the battery capacity to 60 KWH for my car model."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 95\n```",
+    "prompt": "Update the parameter \"battery_capacity\" to 95."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 15\n```",
+    "prompt": "Increase the car's battery capacity to 15 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 30\n```",
+    "prompt": "Reduce the battery capacity of the car to 30 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 10\n```",
+    "prompt": "Update the battery capacity to 10 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 20\n```",
+    "prompt": "Reduce the battery capacity of the car to 20 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 35\n```",
+    "prompt": "Reduce the battery capacity to 35 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"battery_capacity\": 80\n```",
+    "prompt": "Increase the battery capacity to 80 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 4\n```",
+    "prompt": "Charge the car till 4 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 6\n```",
+    "prompt": "Charge the car till 6 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 16\n```",
+    "prompt": "Charge the car until 4 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 17\n```",
+    "prompt": "Charge the car until 5 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 2\n```",
+    "prompt": "Charge the car till 2 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 19\n```",
+    "prompt": "Charge the car till 7 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 9\n```",
+    "prompt": "Charge the car till 9 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 15\n```",
+    "prompt": "Charge the car until 3 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 20\n```",
+    "prompt": "Charge the car till 8 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 1\n```",
+    "prompt": "I would like to set the end charge time to 1 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 0\n```",
+    "prompt": "I need my car to start charging immediately."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 10\n```",
+    "prompt": "Charge the car until 10 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 14\n```",
+    "prompt": "Charge the car till 2 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 7\n```",
+    "prompt": "Change the end charge time to 7 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 11\n```",
+    "prompt": "Charge the car until 11 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 3\n```",
+    "prompt": "Charge the car till 3 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 18\n```",
+    "prompt": "Charge the car till 6 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 22\n```",
+    "prompt": "Charge the car until 10 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 21\n```",
+    "prompt": "Charge the car until 9 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 8\n```",
+    "prompt": "I'd like to extend the charge time of the car until 8 AM."
+  }
+]

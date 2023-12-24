@@ -53,8 +53,6 @@ keys = elec_costs.keys()
 # Create a new model
 model = Model("EVCharging")
 
-# LLM GENERATED DATA CODE GOES HERE
-
 # Create variables
 x = model.addVars(keys,
                   vtype = GRB.INTEGER,
@@ -76,8 +74,6 @@ model.addConstr(sum(x[i] for i in keys) == this_charge_KWH)
 # Optimize model
 model.optimize()
 m = model
-
-# LLM GENERATED CONSTRAINT CODE GOES HERE
 
 # Solve
 m.update()
