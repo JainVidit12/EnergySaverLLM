@@ -32,7 +32,7 @@
         "carbon_cost_desc": "carbon emissions(grams) per KWH each hour of day",
         "carbon_cost_weight": 0.3,
         "carbon_cost_weight_desc": "total cost = elec_cost_weight * elec_cost + carbon_cost_weight * carbon_cost",
-        "elec_cost_weight": 1,
+        "elec_cost_weight": 0.6,
         "elec_cost_weight_desc": "total cost = elec_cost_weight * elec_cost + carbon_cost_weight * carbon_cost",
         "max_power": 100,
         "max_power_desc": "max total charge power in KW"
@@ -49,7 +49,7 @@
             "max_charge": 50,
             "max_power": 11.5,
             "required_charge": 2,
-            "end_time": 19
+            "end_time": 20
         },
         "ZNV0672": {
             "max_charge": 35,
