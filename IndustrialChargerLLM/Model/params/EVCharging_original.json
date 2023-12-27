@@ -68,6 +68,42 @@
             "max_power": 13,
             "required_charge": 1,
             "end_time": 23
+        },
+        "0702YI": {
+            "max_charge": 45,
+            "max_power": 13,
+            "required_charge": 1,
+            "end_time": 23
+        },
+        "P70KBI": {
+            "max_charge": 45,
+            "max_power": 13,
+            "required_charge": 1,
+            "end_time": 23
+        },
+        "KXD3130": {
+            "max_charge": 45,
+            "max_power": 13,
+            "required_charge": 1,
+            "end_time": 23
+        },
+        "QHZ572": {
+            "max_charge": 45,
+            "max_power": 13,
+            "required_charge": 1,
+            "end_time": 23
+        },
+        "6714PP": {
+            "max_charge": 45,
+            "max_power": 13,
+            "required_charge": 1,
+            "end_time": 23
+        },
+        "MS17155": {
+            "max_charge": 45,
+            "max_power": 13,
+            "required_charge": 1,
+            "end_time": 23
         }
     }
 }
