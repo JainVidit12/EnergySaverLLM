@@ -1,0 +1,282 @@
+[
+  {
+    "json_str": "```JSON\n\"carbon_cost\": 40\n```",
+    "prompt": "Change carbon cost to 40."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost\": 25\n```",
+    "prompt": "Change carbon cost to 25."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost\": 35\n```",
+    "prompt": "Change carbon cost to 35."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost\": 45\n```",
+    "prompt": "Change carbon cost to 45."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost\": 5\n```",
+    "prompt": "Change the carbon emissions cost to 5 grams per KWH each hour of the day."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost\": 0\n```",
+    "prompt": "Change the carbon cost to 0."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost\": 30\n```",
+    "prompt": "Change the carbon emissions per KWH each hour of day to 30."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost\": 15\n```",
+    "prompt": "Change the carbon emissions to 15 grams per KWH each hour of day."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost\": 20\n```",
+    "prompt": "Change the carbon emissions per KWH each hour of the day to 20 grams."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost\": 10\n```",
+    "prompt": "Change carbon cost to 10."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.05\n```",
+    "prompt": "Change the carbon cost weight to 0.05."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.6\n```",
+    "prompt": "Change carbon cost weight to 0.6."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.85\n```",
+    "prompt": "Change the carbon cost weight to 0.85."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.15\n```",
+    "prompt": "Change the carbon cost weight to 0.15."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.8\n```",
+    "prompt": "Change the weight of carbon cost in total cost calculation to 0.8."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.1\n```",
+    "prompt": "Change carbon cost weight to 0.1."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.95\n```",
+    "prompt": "Change carbon cost weight to 0.95."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.55\n```",
+    "prompt": "Change carbon cost weight to 0.55."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.25\n```",
+    "prompt": "Change carbon cost weight to 0.25."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.5\n```",
+    "prompt": "Change carbon cost weight to 0.5."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.75\n```",
+    "prompt": "Change carbon cost weight to 0.75."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.0\n```",
+    "prompt": "Change carbon cost weight to 0.0."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.4\n```",
+    "prompt": "Change carbon cost weight to 0.4."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.9\n```",
+    "prompt": "Change the weightage of carbon emissions in total cost calculation to 0.9."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.7\n```",
+    "prompt": "Change carbon cost weight to 0.7."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.65\n```",
+    "prompt": "Change carbon cost weight to 0.65."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.2\n```",
+    "prompt": "Change carbon cost weight to 0.2."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.45\n```",
+    "prompt": "Change carbon cost weight to 0.45."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.35\n```",
+    "prompt": "Change the carbon cost weight to 0.35."
+  },
+  {
+    "json_str": "```JSON\n\"carbon_cost_weight\": 0.3\n```",
+    "prompt": "Change carbon cost weight to 0.3."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.15\n```",
+    "prompt": "Change the electric cost weight to 0.15."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.25\n```",
+    "prompt": "Change electric cost weight to 0.25."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.55\n```",
+    "prompt": "Change the weight of electricity cost to 0.55."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.6\n```",
+    "prompt": "Change electric cost weight to 0.6."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.2\n```",
+    "prompt": "Change the electric cost weight to 0.2."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.65\n```",
+    "prompt": "Change electric cost weight to 0.65."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.4\n```",
+    "prompt": "Change electric cost weight to 0.4."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.1\n```",
+    "prompt": "Change electric cost weight to 0.1."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.05\n```",
+    "prompt": "Change electric cost weight to 0.05."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.75\n```",
+    "prompt": "Change electricity cost weight to 0.75."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.35\n```",
+    "prompt": "Change electric cost weight to 0.35."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.7\n```",
+    "prompt": "Change electric cost weight to 0.7."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.5\n```",
+    "prompt": "Change electric cost weight to 0.5."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.45\n```",
+    "prompt": "Change electric cost weight to 0.45."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.3\n```",
+    "prompt": "Change electric cost weight to 0.3."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.85\n```",
+    "prompt": "Change electric cost weight to 0.85."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.8\n```",
+    "prompt": "Change electric cost weight to 0.8."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.0\n```",
+    "prompt": "Change electric cost weight to 0.0."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.95\n```",
+    "prompt": "Change electric cost weight to 0.95."
+  },
+  {
+    "json_str": "```JSON\n\"elec_cost_weight\": 0.9\n```",
+    "prompt": "Change electricity cost weight to 0.9."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 7\n```",
+    "prompt": "Change max power to 7."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 56\n```",
+    "prompt": "Change max power to 56."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 16\n```",
+    "prompt": "Change max power to 16."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 29\n```",
+    "prompt": "Change max power to 29."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 14\n```",
+    "prompt": "Change max power to 14."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 59\n```",
+    "prompt": "Change max power to 59."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 20\n```",
+    "prompt": "Change max total charge power to 20."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 26\n```",
+    "prompt": "Change max power to 26."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 18\n```",
+    "prompt": "Change max power to 18."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 70\n```",
+    "prompt": "Change max power to 70."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 81\n```",
+    "prompt": "Change max power to 81."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 6\n```",
+    "prompt": "Change max power to 6."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 42\n```",
+    "prompt": "Change the max power to 42."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 91\n```",
+    "prompt": "Change max power to 91."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 22\n```",
+    "prompt": "Change max power to 22."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 51\n```",
+    "prompt": "Change max power to 51."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 53\n```",
+    "prompt": "Alter max power to 53."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 9\n```",
+    "prompt": "Change max power to 9."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 80\n```",
+    "prompt": "Change max power to 80."
+  },
+  {
+    "json_str": "```JSON\n\"max_power\": 62\n```",
+    "prompt": "Change max power to 62."
+  }
+]

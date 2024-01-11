@@ -54,20 +54,20 @@
         "ZNV0672": {
             "max_charge": 35,
             "max_power": 11.5,
-            "required_charge": 0,
-            "end_time": 20
+            "required_charge": 2,
+            "end_time": 17
         },
         "DXC8753": {
             "max_charge": 40,
             "max_power": 13,
-            "required_charge": 0,
-            "end_time": 20
+            "required_charge": 4,
+            "end_time": 22
         },
         "6TU077": {
             "max_charge": 45,
             "max_power": 13,
-            "required_charge": 0,
-            "end_time": 20
+            "required_charge": 1,
+            "end_time": 23
         },
         "0702YI": {
             "max_charge": 45,

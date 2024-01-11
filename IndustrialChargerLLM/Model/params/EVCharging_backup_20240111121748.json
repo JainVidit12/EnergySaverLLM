@@ -66,8 +66,8 @@
         "6TU077": {
             "max_charge": 45,
             "max_power": 13,
-            "required_charge": 0,
-            "end_time": 20
+            "required_charge": 1,
+            "end_time": 23
         },
         "0702YI": {
             "max_charge": 45,

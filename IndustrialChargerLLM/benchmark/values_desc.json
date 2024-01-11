@@ -1,0 +1,13 @@
+{
+    "values_lot_mgr":{
+        "carbon_cost_desc": "Carbon emissions(grams) per KWH each hour of day",
+        "carbon_cost_weight_desc": "total cost = elec_cost_weight * elec_cost + carbon_cost_weight * carbon_cost",
+        "elec_cost_weight_desc": "total cost = elec_cost_weight * elec_cost + carbon_cost_weight * carbon_cost",
+        "max_power_desc": "max total charge power in KW"
+    },
+    "values_car":{
+        "required_charge_desc": "Required charge requested by car in KWH",
+        "max_charge_desc": "Max charge that can be supplied to the car in KWH",
+        "end_charge_time_desc": "Hour by which car should be charged in 24 hour format"
+    }
+}

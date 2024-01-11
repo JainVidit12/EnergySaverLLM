@@ -150,7 +150,9 @@ class ChargingAgentAll(AssistantAgent):
             self.initiate_chat(self._writer, message=CODE_PROMPT)
             
             new_params = parse_json(self.last_message(self._writer)["content"])
-            print(new_params)
+            
+            if self._evaluate:
+                return ""
 
             self._json_str = _insert_params(self._json_str, new_params)
             _replace_json(self._json_str, self._json_filepath)
@@ -248,7 +250,10 @@ class ChargingAgentIndividual(AssistantAgent):
             self.initiate_chat(self._writer, message=CODE_PROMPT)
             
             new_params = parse_json(self.last_message(self._writer)["content"])
-            print(new_params)
+
+            if self._evaluate:
+                return ""
+
             
             self._json_str = _insert_params(self._json_str, new_params, sender_id)
             _replace_json(self._json_str, self._json_filepath)
@@ -296,6 +301,16 @@ def parse_json(json_str):
 
     try:
         return json.loads('{' + json_str[7:-4] + '}')
+    except:
+        pass
+
+    try:
+        return json.loads(json_str )
+    except:
+        pass
+    
+    try:
+        return json.loads('{' + json_str + '}')
     except:
         raise TypeError("Invalid String, unable to convert to json") 
 

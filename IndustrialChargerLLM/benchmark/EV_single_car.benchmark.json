@@ -1,0 +1,242 @@
+[
+  {
+    "json_str": "```JSON\n\"required_charge\": 30\n```",
+    "prompt": "Charge my car with at least 30 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 35\n```",
+    "prompt": "Charge at least 35 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 85\n```",
+    "prompt": "Charge at least 85 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 45\n```",
+    "prompt": "Charge the car with at least 45 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 15\n```",
+    "prompt": "Charge at least 15 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 55\n```",
+    "prompt": "Require a charge of 55 KWH for the car."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 75\n```",
+    "prompt": "Charge at least 75 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 70\n```",
+    "prompt": "Charge at least 70 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 10\n```",
+    "prompt": "Charge at least 10 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 65\n```",
+    "prompt": "Charge at least 65 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 80\n```",
+    "prompt": "Charge at least 80 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 40\n```",
+    "prompt": "Charge at least 40 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 60\n```",
+    "prompt": "Charge at least 60 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 20\n```",
+    "prompt": "Request to charge 20 KWH minimum."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 90\n```",
+    "prompt": "Charge at least 90 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 95\n```",
+    "prompt": "Charge at least 95 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 25\n```",
+    "prompt": "Charge at least 25 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 5\n```",
+    "prompt": "Charge at least 5 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 0\n```",
+    "prompt": "I want the charge to be completely drained."
+  },
+  {
+    "json_str": "```JSON\n\"required_charge\": 50\n```",
+    "prompt": "Charge at least 50 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 15\n```",
+    "prompt": "Charge at most 15 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 40\n```",
+    "prompt": "Limit the charge to 40 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 60\n```",
+    "prompt": "Limit the supplied charge to the car to 60 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 20\n```",
+    "prompt": "Charge at most 20 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 90\n```",
+    "prompt": "Charge at most 90 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 65\n```",
+    "prompt": "Charge at most 65 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 45\n```",
+    "prompt": "Charge at most 45 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 55\n```",
+    "prompt": "Supply no more than 55 KWH to the car."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 80\n```",
+    "prompt": "Charge at most 80 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 75\n```",
+    "prompt": "Charge the car with a maximum of 75 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 50\n```",
+    "prompt": "Charge at most 50 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 95\n```",
+    "prompt": "Charge at most 95 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 10\n```",
+    "prompt": "Do not exceed a total of 10 KWH while charging."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 25\n```",
+    "prompt": "Limit the charge supply to the car to 25 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 5\n```",
+    "prompt": "Charge at most 5 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 70\n```",
+    "prompt": "Do not supply more than 70 KWH to the car."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 35\n```",
+    "prompt": "Charge at most 35 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 0\n```",
+    "prompt": "Do not charge the car at all."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 85\n```",
+    "prompt": "Charge at most 85 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"max_charge\": 30\n```",
+    "prompt": "Charge at most 30 KWH."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 16\n```",
+    "prompt": "Charge the car until 4 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 8\n```",
+    "prompt": "Charge the car until 8 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 5\n```",
+    "prompt": "Charge the car until 5 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 9\n```",
+    "prompt": "Charge the car until 9 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 2\n```",
+    "prompt": "Charge the car until 2 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 17\n```",
+    "prompt": "Charge the car till 5 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 0\n```",
+    "prompt": "Charge the car till midnight."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 7\n```",
+    "prompt": "Charge the car till 7 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 15\n```",
+    "prompt": "Charge the car till 3 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 18\n```",
+    "prompt": "Charge the car till 6 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 3\n```",
+    "prompt": "Charge the car till 3 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 22\n```",
+    "prompt": "Charge the car till 10 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 10\n```",
+    "prompt": "Charge the car till 10 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 14\n```",
+    "prompt": "Charge the car until 2 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 4\n```",
+    "prompt": "Charge the car till 4 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 19\n```",
+    "prompt": "Charge the car till 7 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 20\n```",
+    "prompt": "Charge the car till 8 PM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 6\n```",
+    "prompt": "Charge the car till 6 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 1\n```",
+    "prompt": "Charge the car till 1 AM."
+  },
+  {
+    "json_str": "```JSON\n\"end_charge_time\": 13\n```",
+    "prompt": "Charge the car till 1 PM."
+  }
+]

@@ -1,0 +1,13 @@
+{
+    "values_lot_mgr":{
+        "carbon_cost": [0, 50, 5, 1],
+        "carbon_cost_weight": [0, 100, 5, 0.01],
+        "elec_cost_weight": [0, 100, 5, 0.01],
+        "max_power": [5, 100, 1, 1]
+    },
+    "values_car":{
+        "required_charge": [0, 100, 5, 1],
+        "max_charge": [0, 100, 5, 1],
+        "end_charge_time": [0, 23, 1, 1]
+    }
+}
