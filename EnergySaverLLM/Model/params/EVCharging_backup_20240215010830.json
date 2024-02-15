@@ -69,6 +69,6 @@
     "max_power_desc": "max charge power in KW",
     "battery_capacity": 70,
     "battery_capacity_desc": "Battery capacity for car model and make in KWH",
-    "end_charge_time": 9,
+    "end_charge_time": 5,
     "end_charge_time_desc": "Time by which car should be charged"
 }

@@ -10,9 +10,9 @@ from gurobipy import GRB
 from termcolor import colored
 import csv
 
-from flaml.autogen.agentchat import AssistantAgent
-from flaml.autogen.agentchat.agent import Agent
-from flaml.autogen.code_utils import extract_code
+from autogen.agentchat import AssistantAgent
+from autogen.agentchat.agent import Agent
+from autogen.code_utils import extract_code
 
 # %% System Messages
 
