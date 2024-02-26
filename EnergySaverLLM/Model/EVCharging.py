@@ -4,7 +4,7 @@ import json
 
 # Fetching data from JSON file
 
-params_filepath = "EnergySaverLLM/Model/params/EVCharging.json"
+params_filepath = "Model/params/EVCharging.json"
 
 stored_params = json.load(open(params_filepath))
 
