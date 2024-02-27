@@ -11,10 +11,11 @@ from typing import Optional, List, Dict
 
 # import autogen
 from autogen.agentchat import Agent, UserProxyAgent
-from Agent import ChargingAgent, reset_params_file
 from autogen.code_utils import extract_code
 from autogen import config_list_from_json, runtime_logging
 
+from Agent import ChargingAgent, reset_params_file
+from Model.utils import getInput
 
 # global params_filepath
 params_filepath = "Model/params/EVCharging.json"
@@ -90,7 +91,7 @@ if __name__ == '__main__':
         human_input_mode="NEVER", code_execution_config=False
     )
 
-    user_message = input("Input Command, enter 'quit' to cancel: ")
+    user_message = getInput(input("Input Command or path to audio FLAC file, enter 'quit' to cancel: "))
 
     while user_message != "quit":
         user.initiate_chat(agent, message=user_message)
@@ -98,7 +99,7 @@ if __name__ == '__main__':
         # Reset params file to the original file
         reset_params_file(params_filepath, params_filepath_backup)
         
-        user_message = input("Input Command, enter 'quit' to cancel: ")
+        user_message = input("Input Command or path to audio FLAC file, enter 'quit' to cancel: ")
 
     
     
