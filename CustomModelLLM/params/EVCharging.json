@@ -1,0 +1,4 @@
+{
+    "end_charge_time": 5,
+    "end_charge_time_desc": "Time by which car should be charged, in 24 hour format"
+}

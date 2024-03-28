@@ -8,7 +8,7 @@ class AudioProcessor():
     
     def __init__(
         self,
-        model_name : Optional[str] = "openai/whisper-small"
+        model_name : Optional[str] = "openai/whisper-base"
     ):
         self._processor = WhisperProcessor.from_pretrained(model_name)
         self._model = WhisperForConditionalGeneration.from_pretrained(model_name)
@@ -16,7 +16,7 @@ class AudioProcessor():
 
 
     def processAudio(self, data, sampling_rate) -> str:
-        input_features = self._processor(data, sampling_rate=sampling_rate, return_tensors="pt").input_features 
+        input_features = self._processor(data, sampling_rate = sampling_rate, return_tensors="pt").input_features 
         predicted_ids = self._model.generate(input_features)
         transcription = self._processor.batch_decode(predicted_ids, skip_special_tokens=True)
 

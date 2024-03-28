@@ -201,7 +201,7 @@ def _replace_json(json_str: str, json_filepath: str):
     os.rename(json_filepath, new_json_filepath)
     with open(json_filepath, "w") as text_file:
         text_file.write(json_str)
-
+    text_file.close()
 
 
 
