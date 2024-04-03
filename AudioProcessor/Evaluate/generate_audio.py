@@ -11,7 +11,7 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 # /scr1/vjain018/EnergySaverLLM/AudioProcessor/Evaluate/EV_combined.benchmark.json
 path_prefix = '/scr1/vjain018/EnergySaverLLM/AudioProcessor/Evaluate/'
-input_benchmark_filename = path_prefix + 'EV_combined.benchmark.json'
+input_benchmark_filename = path_prefix + 'benchmark.json'
 
 f = open(input_benchmark_filename)
 
@@ -21,13 +21,10 @@ voices = ['alloy','echo','shimmer','fable','onyx','nova']
 
 
 
-for sample in input_text_benchmark:
-    if 'end_charge_time' not in sample['json_str']:
-        continue
-
+for index, sample in enumerate(input_text_benchmark):
+    
     text = sample['prompt']
-    index = sample['index']
-
+    
     voice = voices[index%len(voices)]
 
     speech_file_path_text = path_prefix + 'audio_samples/'+str(index)+'_'+voice+'.wav'

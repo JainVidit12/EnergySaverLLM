@@ -7,6 +7,7 @@ from typing import Optional, List, Dict
 
 
 from Agent import ChargingAgent, extract_code, reset_params_file, clear_param_backups
+from transformers import BitsAndBytesConfig
 
 # global params_filepath
 path_prefix = '/scr1/vjain018/EnergySaverLLM/CustomModelLLM/'
@@ -41,6 +42,7 @@ if __name__ == '__main__':
         name="Tesla Charging Example",
         example_qa=example_qa,
         json_filepath=params_filepath,
+        quantize=BitsAndBytesConfig(load_in_8bit=True)
         # evaluate=True
     )
 

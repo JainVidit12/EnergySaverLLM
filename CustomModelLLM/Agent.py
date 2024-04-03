@@ -1,4 +1,4 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 from typing import Optional
 import json
 import datetime
@@ -34,13 +34,23 @@ class ChargingAgent():
         example_qa="",
         json_filepath="",
         evaluate=False,
+        quantize = None,
         **kwargs
     ):
-    
+
+        
+
         self._example_qa = example_qa
         self._evaluate = evaluate
+
+        if quantize is not None:
+            quantization_config = BitsAndBytesConfig(load_in_8bit=True)
+            self._model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto", quantization_config=quantization_config)
+        else:
+            self._model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")
+
         self._tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self._model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")
+        
 
         self._json_filepath = json_filepath
         with open(json_filepath, 'r') as f:

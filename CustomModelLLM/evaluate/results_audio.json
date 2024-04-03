@@ -1,0 +1,1058 @@
+[
+    {
+        "truth_json": {
+            "end_charge_time": 10
+        },
+        "prompt": " Charge the car until 10am.",
+        "index": 40,
+        "pred_json": {
+            "end_charge_time": 10
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 23
+        },
+        "prompt": " Ensure the vehicle is fully charged by 11 pm.",
+        "index": 95,
+        "pred_json": {
+            "end_charge_time": 23
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 13
+        },
+        "prompt": " Charge my car until 1 pm.",
+        "index": 54,
+        "pred_json": {
+            "end_charge_time": 13
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 9
+        },
+        "prompt": " Ensure the car is fully charged by 9am.",
+        "index": 38,
+        "pred_json": {
+            "end_charge_time": 9
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 21
+        },
+        "prompt": " I need the car to be charged up by 9pm.",
+        "index": 84,
+        "pred_json": {
+            "end_charge_time": 21
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 23
+        },
+        "prompt": " Charge my car until 11 p.m.",
+        "index": 93,
+        "pred_json": {
+            "end_charge_time": 23
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 4
+        },
+        "prompt": " Charge the car by 4am.",
+        "index": 18,
+        "pred_json": {
+            "end_charge_time": 4
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 15
+        },
+        "prompt": " Please ensure the car is charged by 3pm.",
+        "index": 61,
+        "pred_json": {
+            "end_charge_time": 15
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 21
+        },
+        "prompt": " Charge the car until 9pm.",
+        "index": 87,
+        "pred_json": {
+            "end_charge_time": 21
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 16
+        },
+        "prompt": " Charge the car until 4pm.",
+        "index": 66,
+        "pred_json": {
+            "end_charge_time": 16
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 7
+        },
+        "prompt": " Charge the EV until it's 7am.",
+        "index": 28,
+        "pred_json": {
+            "end_charge_time": 7
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 0
+        },
+        "prompt": " Charge the car until midnight.",
+        "index": 1,
+        "pred_json": {
+            "end_charge_time": 24
+        },
+        "result_flag": false
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 17
+        },
+        "prompt": " Charge the car until 5 pm.",
+        "index": 68,
+        "pred_json": {
+            "end_charge_time": 17
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 15
+        },
+        "prompt": " Charge the car up until 3pm.",
+        "index": 63,
+        "pred_json": {
+            "end_charge_time": 15
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 23
+        },
+        "prompt": " Charge the car until 11 pm.",
+        "index": 94,
+        "pred_json": {
+            "end_charge_time": 23
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 7
+        },
+        "prompt": " Charge the car until 7am.",
+        "index": 30,
+        "pred_json": {
+            "end_charge_time": 7
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 10
+        },
+        "prompt": " Charge the car until 10 a.m.",
+        "index": 42,
+        "pred_json": {
+            "end_charge_time": 10
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 4
+        },
+        "prompt": " Please make sure the car charging finishes by 4am.",
+        "index": 16,
+        "pred_json": {
+            "end_charge_time": 4
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 18
+        },
+        "prompt": " ensure the car is fully charged by 6pm.",
+        "index": 75,
+        "pred_json": {
+            "end_charge_time": 18
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 5
+        },
+        "prompt": " Ensure the car is fully charged by 5am.",
+        "index": 22,
+        "pred_json": {
+            "end_charge_time": 5
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 20
+        },
+        "prompt": " Ensure the car is fully charged by 8 pm.",
+        "index": 82,
+        "pred_json": {
+            "end_charge_time": 20
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 8
+        },
+        "prompt": " Charge the car until 8 a.m.",
+        "index": 32,
+        "pred_json": {
+            "end_charge_time": 8
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 3
+        },
+        "prompt": " Charge the car until 3am.",
+        "index": 14,
+        "pred_json": {
+            "end_charge_time": 3
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 13
+        },
+        "prompt": " ensure that the car is fully charged by 1 pm.",
+        "index": 53,
+        "pred_json": {
+            "end_charge_time": 13
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 19
+        },
+        "prompt": " charge the car by 7 pm.",
+        "index": 77,
+        "pred_json": {
+            "end_charge_time": 19
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 5
+        },
+        "prompt": " Charge the car by 5am.",
+        "index": 23,
+        "pred_json": {
+            "end_charge_time": 5
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 8
+        },
+        "prompt": " I need the car to be fully charged by 8am.",
+        "index": 34,
+        "pred_json": {
+            "end_charge_time": 8
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 18
+        },
+        "prompt": " I need the car to be fully charged by 6 pm.",
+        "index": 74,
+        "pred_json": {
+            "end_charge_time": 18
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 6
+        },
+        "prompt": " Charge the cartil 6am.",
+        "index": 26,
+        "pred_json": {
+            "end_charge_time": 6
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 3
+        },
+        "prompt": " Charge the car until 3am.",
+        "index": 12,
+        "pred_json": {
+            "end_charge_time": 3
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 0
+        },
+        "prompt": " Charge the car by midnight.",
+        "index": 3,
+        "pred_json": {
+            "end_charge_time": 24
+        },
+        "result_flag": false
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 16
+        },
+        "prompt": " Charge the car till 4pm.",
+        "index": 64,
+        "pred_json": {
+            "end_charge_time": 16
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 14
+        },
+        "prompt": " Charge the car until 2 p.m.",
+        "index": 58,
+        "pred_json": {
+            "end_charge_time": 14
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 20
+        },
+        "prompt": " Charge the car until 8pm.",
+        "index": 81,
+        "pred_json": {
+            "end_charge_time": 20
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 11
+        },
+        "prompt": " Charge the car till 11am.",
+        "index": 45,
+        "pred_json": {
+            "end_charge_time": 11
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 20
+        },
+        "prompt": " Ensure the car is charged by 8pm.",
+        "index": 83,
+        "pred_json": {
+            "end_charge_time": 20
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 21
+        },
+        "prompt": " Charge the car till 9pm.",
+        "index": 85,
+        "pred_json": {
+            "end_charge_time": 21
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 11
+        },
+        "prompt": " Charge the car until 11 a.m.",
+        "index": 44,
+        "pred_json": {
+            "end_charge_time": 11
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 22
+        },
+        "prompt": " charge the car up by 10 pm.",
+        "index": 89,
+        "pred_json": {
+            "end_charge_time": 22
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 14
+        },
+        "prompt": " charge the car until 2pm.",
+        "index": 59,
+        "pred_json": {
+            "end_charge_time": 14
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 1
+        },
+        "prompt": " Charge the car by 1 a.m.",
+        "index": 6,
+        "pred_json": {
+            "end_charge_time": 1
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 13
+        },
+        "prompt": " Ensure that the car is charged by 1pm.",
+        "index": 52,
+        "pred_json": {
+            "end_charge_time": 13
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 4
+        },
+        "prompt": " charge the car until 4am.",
+        "index": 17,
+        "pred_json": {
+            "end_charge_time": 4
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 16
+        },
+        "prompt": " Charge the car till 4pm.",
+        "index": 67,
+        "pred_json": {
+            "end_charge_time": 16
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 21
+        },
+        "prompt": " Schedule the car to be fully charged by 9 pm.",
+        "index": 86,
+        "pred_json": {
+            "end_charge_time": 21
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 5
+        },
+        "prompt": " charge the car by 5 a.m.",
+        "index": 20,
+        "pred_json": {
+            "end_charge_time": 5
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 15
+        },
+        "prompt": " I need the car to be fully charged by 3pm.",
+        "index": 62,
+        "pred_json": {
+            "end_charge_time": 15
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 0
+        },
+        "prompt": " Charge the car by midnight.",
+        "index": 0,
+        "pred_json": {
+            "end_charge_time": 24
+        },
+        "result_flag": false
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 10
+        },
+        "prompt": " Set the charging to complete by 10am.",
+        "index": 43,
+        "pred_json": {
+            "end_charge_time": 10
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 0
+        },
+        "prompt": " set the car to be charged up by midnight.",
+        "index": 2,
+        "pred_json": {
+            "end_charge_time": 24
+        },
+        "result_flag": false
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 17
+        },
+        "prompt": " Charge the car by 5 pm.",
+        "index": 70,
+        "pred_json": {
+            "end_charge_time": 17
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 2
+        },
+        "prompt": " Charge the car until 2am.",
+        "index": 9,
+        "pred_json": {
+            "end_charge_time": 2
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 6
+        },
+        "prompt": " Charge my EV until 6 in the morning.",
+        "index": 27,
+        "pred_json": {
+            "end_charge_time": 6
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 8
+        },
+        "prompt": " Charge the car by 8am.",
+        "index": 33,
+        "pred_json": {
+            "end_charge_time": 8
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 1
+        },
+        "prompt": " Ensure the car is fully charged by 1am.",
+        "index": 7,
+        "pred_json": {
+            "end_charge_time": 1
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 13
+        },
+        "prompt": " Charge the car till 1 p.m. in the afternoon.",
+        "index": 55,
+        "pred_json": {
+            "end_charge_time": 13
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 22
+        },
+        "prompt": " I need the car to be charged by 10 pm.",
+        "index": 90,
+        "pred_json": {
+            "end_charge_time": 22
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 6
+        },
+        "prompt": " Charge the car until 6am.",
+        "index": 24,
+        "pred_json": {
+            "end_charge_time": 6
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 5
+        },
+        "prompt": " Please ensure the car is fully charged by five in the morning.",
+        "index": 21,
+        "pred_json": {
+            "end_charge_time": 5
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 12
+        },
+        "prompt": " Charge the car until 12 p.m.",
+        "index": 48,
+        "pred_json": {
+            "end_charge_time": 12
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 11
+        },
+        "prompt": " Charge the car by 11 a.m.",
+        "index": 46,
+        "pred_json": {
+            "end_charge_time": 11
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 19
+        },
+        "prompt": " Charge the car until 7pm.",
+        "index": 79,
+        "pred_json": {
+            "end_charge_time": 19
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 10
+        },
+        "prompt": " charge the car until 10am.",
+        "index": 41,
+        "pred_json": {
+            "end_charge_time": 10
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 12
+        },
+        "prompt": " Charge the car till 12 p.m.",
+        "index": 49,
+        "pred_json": {
+            "end_charge_time": 12
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 8
+        },
+        "prompt": " Please ensure the car is charged by 8 a.m.",
+        "index": 35,
+        "pred_json": {
+            "end_charge_time": 8
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 20
+        },
+        "prompt": " Please ensure the car is charged by 8 pm.",
+        "index": 80,
+        "pred_json": {
+            "end_charge_time": 20
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 18
+        },
+        "prompt": " Ensure the car is charged by 6pm.",
+        "index": 72,
+        "pred_json": {
+            "end_charge_time": 18
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 19
+        },
+        "prompt": " Charge the car by 7pm.",
+        "index": 76,
+        "pred_json": {
+            "end_charge_time": 19
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 11
+        },
+        "prompt": " Charge the car until 11 a.m.",
+        "index": 47,
+        "pred_json": {
+            "end_charge_time": 11
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 1
+        },
+        "prompt": " charge the car to 1am.",
+        "index": 5,
+        "pred_json": {
+            "end_charge_time": 1
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 22
+        },
+        "prompt": " Charge the car by 10 pm.",
+        "index": 88,
+        "pred_json": {
+            "end_charge_time": 22
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 2
+        },
+        "prompt": " Set the car to be fully charged by 2am.",
+        "index": 10,
+        "pred_json": {
+            "end_charge_time": 2
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 16
+        },
+        "prompt": " charge the car by 4pm.",
+        "index": 65,
+        "pred_json": {
+            "end_charge_time": 16
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 3
+        },
+        "prompt": " Charge my car by 3am.",
+        "index": 13,
+        "pred_json": {
+            "end_charge_time": 3
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 12
+        },
+        "prompt": " Charge the car until noon.",
+        "index": 50,
+        "pred_json": {
+            "end_charge_time": 12
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 18
+        },
+        "prompt": " Charge the car by 6pm.",
+        "index": 73,
+        "pred_json": {
+            "end_charge_time": 18
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 23
+        },
+        "prompt": " Charge the car until 11 p.m.",
+        "index": 92,
+        "pred_json": {
+            "end_charge_time": 23
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 4
+        },
+        "prompt": " Charge the car by 4am.",
+        "index": 19,
+        "pred_json": {
+            "end_charge_time": 4
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 17
+        },
+        "prompt": " Charge the car by 5pm.",
+        "index": 69,
+        "pred_json": {
+            "end_charge_time": 17
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 22
+        },
+        "prompt": " Ensure the car is fully charged by 10 pm.",
+        "index": 91,
+        "pred_json": {
+            "end_charge_time": 22
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 12
+        },
+        "prompt": " Please make sure the car is charged by noon.",
+        "index": 51,
+        "pred_json": {
+            "end_charge_time": 12
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 9
+        },
+        "prompt": " Set the car's charging to be complete by 9am.",
+        "index": 36,
+        "pred_json": {
+            "end_charge_time": 9
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 2
+        },
+        "prompt": " Charge the car until 2am.",
+        "index": 8,
+        "pred_json": {
+            "end_charge_time": 2
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 7
+        },
+        "prompt": " Charge the car until 7am.",
+        "index": 31,
+        "pred_json": {
+            "end_charge_time": 7
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 14
+        },
+        "prompt": " Charge the car by 2pm.",
+        "index": 56,
+        "pred_json": {
+            "end_charge_time": 14
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 15
+        },
+        "prompt": " Charge the car until 3pm.",
+        "index": 60,
+        "pred_json": {
+            "end_charge_time": 15
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 7
+        },
+        "prompt": " Make sure the car is fully charged by 7am.",
+        "index": 29,
+        "pred_json": {
+            "end_charge_time": 7
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 9
+        },
+        "prompt": " initiate the charging process such that my car should be fully charged by 9am.",
+        "index": 39,
+        "pred_json": {
+            "end_charge_time": 9
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 19
+        },
+        "prompt": " Charge the car by 7pm.",
+        "index": 78,
+        "pred_json": {
+            "end_charge_time": 19
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 17
+        },
+        "prompt": " charge the car until 5pm.",
+        "index": 71,
+        "pred_json": {
+            "end_charge_time": 17
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 3
+        },
+        "prompt": " Ensure the car is fully charged by 3am.",
+        "index": 15,
+        "pred_json": {
+            "end_charge_time": 3
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 14
+        },
+        "prompt": " Charge the car until 2pm in the afternoon.",
+        "index": 57,
+        "pred_json": {
+            "end_charge_time": 14
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 1
+        },
+        "prompt": " Charge the car till 1 a.m.",
+        "index": 4,
+        "pred_json": {
+            "end_charge_time": 1
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 2
+        },
+        "prompt": " I want my car to be charged by 2am.",
+        "index": 11,
+        "pred_json": {
+            "end_charge_time": 2
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 6
+        },
+        "prompt": " Charge the car until 6am.",
+        "index": 25,
+        "pred_json": {
+            "end_charge_time": 6
+        },
+        "result_flag": true
+    },
+    {
+        "truth_json": {
+            "end_charge_time": 9
+        },
+        "prompt": " The car needs to be completely charged by 9am.",
+        "index": 37,
+        "pred_json": {
+            "end_charge_time": 9
+        },
+        "result_flag": true
+    }
+]

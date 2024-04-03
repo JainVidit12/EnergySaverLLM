@@ -7,14 +7,15 @@ from typing import Optional, List, Dict
 
 
 from Agent import ChargingAgent, extract_code, reset_params_file, clear_param_backups, create_dict
+from transformers import BitsAndBytesConfig
 
 # global params_filepath
 params_filepath = "params/EVCharging.json"
 params_filepath_original = "params/EVCharging_original.json"
 
 path_prefix = '/scr1/vjain018/EnergySaverLLM/CustomModelLLM/evaluate/'
-input_benchmark_filename = path_prefix + 'EV_combined.benchmark.json'
-results_filename = path_prefix + 'results.json'
+input_benchmark_filename = path_prefix + 'prompts_audio.json'
+results_filename = path_prefix + 'results_audio.json'
 
 
 # %% Few Shot Prompt
@@ -43,6 +44,7 @@ if __name__ == '__main__':
         name="Tesla Charging Example",
         example_qa=example_qa,
         json_filepath=params_filepath,
+        quantize=BitsAndBytesConfig(load_in_4bit=True),
         evaluate=True
     )
 
@@ -56,13 +58,11 @@ if __name__ == '__main__':
 
     correct_count, incorrect_count = 0, 0
 
+    # for index, sample in enumerate(input_text_benchmark):
     for sample in input_text_benchmark:
-        if 'end_charge_time' not in sample['json_str'] or sample['index']>=118:
-            continue
-        
         result_this = {}
-        result_this['truth_json'] = create_dict(extract_code(sample['json_str']))
-        result_this['prompt'] = sample['prompt']
+        result_this['truth_json'] = create_dict(extract_code(sample['json']))
+        result_this['prompt'] = sample['predicted']
         result_this['index'] = sample['index']
 
         result_this['pred_json'] = agent.chat(message = result_this['prompt'])

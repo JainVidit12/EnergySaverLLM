@@ -1,0 +1,386 @@
+[
+    {
+        "json": "```JSON\n\"end_charge_time\": 0\n```",
+        "prompt": "Charge the car by midnight."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 0\n```",
+        "prompt": "Charge the car until midnight."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 0\n```",
+        "prompt": "Set the car to be charged up by midnight."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 0\n```",
+        "prompt": "Charge the car by midnight."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 1\n```",
+        "prompt": "Charge the car till 1 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 1\n```",
+        "prompt": "Charge the car till 1 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 1\n```",
+        "prompt": "Charge the car by 1 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 1\n```",
+        "prompt": "Ensure the car is fully charged by 1 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 2\n```",
+        "prompt": "Charge the car until 2 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 2\n```",
+        "prompt": "Charge the car until 2 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 2\n```",
+        "prompt": "Set the car to be fully charged by 2 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 2\n```",
+        "prompt": "I want my car to be charged by 2 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 3\n```",
+        "prompt": "Charge the car until 3 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 3\n```",
+        "prompt": "Charge my car by 3 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 3\n```",
+        "prompt": "Charge the car until 3 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 3\n```",
+        "prompt": "Ensure the car is fully charged by 3 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 4\n```",
+        "prompt": "Please make sure the car charging finishes by 4 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 4\n```",
+        "prompt": "Charge the car until 4 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 4\n```",
+        "prompt": "Charge the car by 4 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 4\n```",
+        "prompt": "Charge the car by 4 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 5\n```",
+        "prompt": "Charge the car by 5 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 5\n```",
+        "prompt": "Please ensure the car is fully charged by 5 in the morning."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 5\n```",
+        "prompt": "Ensure the car is fully charged by 5 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 5\n```",
+        "prompt": "Charge the car by 5 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 6\n```",
+        "prompt": "Charge the car until 6 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 6\n```",
+        "prompt": "Charge the car until 6 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 6\n```",
+        "prompt": "Charge the car till 6 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 6\n```",
+        "prompt": "Charge my EV until 6 in the morning."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 7\n```",
+        "prompt": "Charge the EV until it's 7 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 7\n```",
+        "prompt": "Make sure the car is fully charged by 7 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 7\n```",
+        "prompt": "Charge the car until 7 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 7\n```",
+        "prompt": "Charge the car until 7 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 8\n```",
+        "prompt": "Charge the car until 8 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 8\n```",
+        "prompt": "Charge the car by 8 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 8\n```",
+        "prompt": "I need the car to be fully charged by 8 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 8\n```",
+        "prompt": "Please ensure the car is charged by 8 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 9\n```",
+        "prompt": "Set the car's charging to be complete by 9 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 9\n```",
+        "prompt": "The car needs to be completely charged by 9 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 9\n```",
+        "prompt": "Ensure the car is fully charged by 9 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 9\n```",
+        "prompt": "Initiate the charging process such that my car should be fully charged by 9 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 10\n```",
+        "prompt": "Charge the car until 10 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 10\n```",
+        "prompt": "Charge the car until 10 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 10\n```",
+        "prompt": "Charge the car until 10 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 10\n```",
+        "prompt": "Set the charging to complete by 10 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 11\n```",
+        "prompt": "Charge the car until 11 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 11\n```",
+        "prompt": "Charge the car till 11 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 11\n```",
+        "prompt": "Charge the car by 11 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 11\n```",
+        "prompt": "Charge the car until 11 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 12\n```",
+        "prompt": "Charge the car until 12 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 12\n```",
+        "prompt": "Charge the car till 12 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 12\n```",
+        "prompt": "Charge the car until noon."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 12\n```",
+        "prompt": "Please make sure the car is charged by noon."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 13\n```",
+        "prompt": "Ensure that the car is charged by 1 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 13\n```",
+        "prompt": "Ensure that the car is fully charged by 1 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 13\n```",
+        "prompt": "Charge my car until 1 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 13\n```",
+        "prompt": "Charge the car till 1 PM in the afternoon."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 14\n```",
+        "prompt": "Charge the car by 2 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 14\n```",
+        "prompt": "Charge the car until 2 PM in the afternoon."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 14\n```",
+        "prompt": "Charge the car until 2 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 14\n```",
+        "prompt": "Charge the car until 2 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 15\n```",
+        "prompt": "Charge the car until 3 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 15\n```",
+        "prompt": "Please ensure the car is charged by 3 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 15\n```",
+        "prompt": "I need the car to be fully charged by 3 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 15\n```",
+        "prompt": "Charge the car up until 3 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 16\n```",
+        "prompt": "Charge the car till 4 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 16\n```",
+        "prompt": "Charge the car by 4 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 16\n```",
+        "prompt": "Charge the car until 4 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 16\n```",
+        "prompt": "Charge the car till 4 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 17\n```",
+        "prompt": "Charge the car until 5 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 17\n```",
+        "prompt": "Charge the car by 5 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 17\n```",
+        "prompt": "Charge the car by 5 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 17\n```",
+        "prompt": "Charge the car until 5 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 18\n```",
+        "prompt": "Ensure the car is charged by 6 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 18\n```",
+        "prompt": "Charge the car by 6 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 18\n```",
+        "prompt": "I need the car to be fully charged by 6 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 18\n```",
+        "prompt": "Ensure the car is fully charged by 6 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 19\n```",
+        "prompt": "Charge the car by 7 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 19\n```",
+        "prompt": "Charge the car by 7 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 19\n```",
+        "prompt": "Charge the car by 7 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 19\n```",
+        "prompt": "Charge the car until 7 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 20\n```",
+        "prompt": "Please ensure the car is charged by 8 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 20\n```",
+        "prompt": "Charge the car until 8 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 20\n```",
+        "prompt": "Ensure the car is fully charged by 8 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 20\n```",
+        "prompt": "Ensure the car is charged by 8 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 21\n```",
+        "prompt": "I need the car to be charged up by 9 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 21\n```",
+        "prompt": "Charge the car till 9 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 21\n```",
+        "prompt": "Schedule the car to be fully charged by 9 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 21\n```",
+        "prompt": "Charge the car until 9 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 22\n```",
+        "prompt": "Charge the car by 10 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 22\n```",
+        "prompt": "Charge the car up by 10 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 22\n```",
+        "prompt": "I need the car to be charged by 10 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 22\n```",
+        "prompt": "Ensure the car is fully charged by 10 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 23\n```",
+        "prompt": "Charge the car until 11 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 23\n```",
+        "prompt": "Charge my car until 11 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 23\n```",
+        "prompt": "Charge the car until 11 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": 23\n```",
+        "prompt": "Ensure the vehicle is fully charged by 11 PM."
+    }
+]

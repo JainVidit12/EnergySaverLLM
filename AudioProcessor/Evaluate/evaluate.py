@@ -40,7 +40,7 @@ whisper  = pipeline("automatic-speech-recognition",
 
 if __name__ == "__main__":
     
-    input_benchmark_filename = path_prefix + 'EV_combined.benchmark.json'
+    input_benchmark_filename = path_prefix + 'benchmark.json'
     f = open(input_benchmark_filename)
     input_text_benchmark = json.load(f)
 
@@ -50,7 +50,7 @@ if __name__ == "__main__":
     target_sampling_rate = 16000
     for sample in sound_samples:
         number = int(sample.split('_')[0])
-        print(path_prefix+'audio_samples/'+sample)
+        # print(path_prefix+'audio_samples/'+sample)
         
         data, sample_rate = sf.read(path_prefix+'audio_samples/'+sample)
 
@@ -58,20 +58,21 @@ if __name__ == "__main__":
         data = sps.resample(data, number_of_samples)
         
         text_from_audio = audioprocessor.processAudio(data, target_sampling_rate)[0]
-        print(text_from_audio)
+        # print(text_from_audio)
         # text_from_audio = transcription = whisper('audio_samples/'+sample,
         #                 chunk_length_s=30)
         
         sample_dict = input_text_benchmark[number]
         ground_truth = sample_dict['prompt']
-        ground_truth_json = sample_dict['prompt']
+        ground_truth_json = sample_dict['json']
 
 
         logs.append({
             'predicted':text_from_audio,
             'actual':ground_truth,
-            'index':number
+            'index':number,
+            'json':ground_truth_json,
         })
         
-    with open('result.json', 'w') as f:
-        json.dump(logs, f)
+    with open('result_audio.json', 'w') as f:
+        json.dump(logs, f, indent=4)
