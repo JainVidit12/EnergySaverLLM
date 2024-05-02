@@ -4,7 +4,7 @@
 # import auxillary packages
 import json
 from typing import Optional, List, Dict
-
+import torch
 
 from Agent import ChargingAgent, extract_code, reset_params_file, clear_param_backups, create_dict
 from transformers import BitsAndBytesConfig
@@ -34,7 +34,8 @@ Answer Code:
 "end_charge_time": 15
 ```
 """
-
+fourBit_config = BitsAndBytesConfig(load_in_4bit=True,bnb_4bit_compute_dtype=torch.float16)
+eightBit_config = BitsAndBytesConfig(load_in_8bit=True)
 
 if __name__ == '__main__':
 
@@ -44,7 +45,7 @@ if __name__ == '__main__':
         name="Tesla Charging Example",
         example_qa=example_qa,
         json_filepath=params_filepath,
-        quantize=BitsAndBytesConfig(load_in_4bit=True),
+        quantize=fourBit_config,
         evaluate=True
     )
 
@@ -74,7 +75,19 @@ if __name__ == '__main__':
 
         results_all.append(result_this)
 
-    with open(results_filename, 'w') as f:
-        json.dump(results_all, f, indent = 4)
+    # with open(results_filename, 'w') as f:
+        # json.dump(results_all, f, indent = 4)
 
     print(f"correct_count:{str(correct_count)}, incorrect_count: {str(incorrect_count)}")
+
+
+"""
+Gemma 7b - 17GB, 97%, acc 100% correct
+8bit - 16GB - 70%, acc 100% correct
+4 bit - 8gb 50% 88/96 correct
+
+Gemma 7b-it 4 bit 7GB 50%, acc 100% correct
+
+Gemma 2b  6GB 50%
+
+"""

@@ -1,0 +1,578 @@
+[
+    {
+        "predicted": " Charge the car until 10am.",
+        "actual": "Charge the car until 10 AM.",
+        "index": 40,
+        "json": "```JSON\n\"end_charge_time\": 10\n```"
+    },
+    {
+        "predicted": " Ensure the vehicle is fully charged by 11 pm.",
+        "actual": "Ensure the vehicle is fully charged by 11 PM.",
+        "index": 95,
+        "json": "```JSON\n\"end_charge_time\": 23\n```"
+    },
+    {
+        "predicted": " Charge my car until 1 pm.",
+        "actual": "Charge my car until 1 PM.",
+        "index": 54,
+        "json": "```JSON\n\"end_charge_time\": 13\n```"
+    },
+    {
+        "predicted": " Ensure the car is fully charged by 9am.",
+        "actual": "Ensure the car is fully charged by 9 AM.",
+        "index": 38,
+        "json": "```JSON\n\"end_charge_time\": 9\n```"
+    },
+    {
+        "predicted": " I need the car to be charged up by 9pm.",
+        "actual": "I need the car to be charged up by 9 PM.",
+        "index": 84,
+        "json": "```JSON\n\"end_charge_time\": 21\n```"
+    },
+    {
+        "predicted": " Charge my car until 11 p.m.",
+        "actual": "Charge my car until 11 PM.",
+        "index": 93,
+        "json": "```JSON\n\"end_charge_time\": 23\n```"
+    },
+    {
+        "predicted": " Charge the car by 4am.",
+        "actual": "Charge the car by 4 AM.",
+        "index": 18,
+        "json": "```JSON\n\"end_charge_time\": 4\n```"
+    },
+    {
+        "predicted": " Please ensure the car is charged by 3pm.",
+        "actual": "Please ensure the car is charged by 3 PM.",
+        "index": 61,
+        "json": "```JSON\n\"end_charge_time\": 15\n```"
+    },
+    {
+        "predicted": " Charge the car until 9pm.",
+        "actual": "Charge the car until 9 PM.",
+        "index": 87,
+        "json": "```JSON\n\"end_charge_time\": 21\n```"
+    },
+    {
+        "predicted": " Charge the car until 4pm.",
+        "actual": "Charge the car until 4 PM.",
+        "index": 66,
+        "json": "```JSON\n\"end_charge_time\": 16\n```"
+    },
+    {
+        "predicted": " Charge the EV until it's 7am.",
+        "actual": "Charge the EV until it's 7 AM.",
+        "index": 28,
+        "json": "```JSON\n\"end_charge_time\": 7\n```"
+    },
+    {
+        "predicted": " Charge the car until midnight.",
+        "actual": "Charge the car until midnight.",
+        "index": 1,
+        "json": "```JSON\n\"end_charge_time\": 0\n```"
+    },
+    {
+        "predicted": " Charge the car until 5 pm.",
+        "actual": "Charge the car until 5 PM.",
+        "index": 68,
+        "json": "```JSON\n\"end_charge_time\": 17\n```"
+    },
+    {
+        "predicted": " Charge the car up until 3pm.",
+        "actual": "Charge the car up until 3 PM.",
+        "index": 63,
+        "json": "```JSON\n\"end_charge_time\": 15\n```"
+    },
+    {
+        "predicted": " Charge the car until 11 pm.",
+        "actual": "Charge the car until 11 PM.",
+        "index": 94,
+        "json": "```JSON\n\"end_charge_time\": 23\n```"
+    },
+    {
+        "predicted": " Charge the car until 7am.",
+        "actual": "Charge the car until 7 AM.",
+        "index": 30,
+        "json": "```JSON\n\"end_charge_time\": 7\n```"
+    },
+    {
+        "predicted": " Charge the car until 10 a.m.",
+        "actual": "Charge the car until 10 AM.",
+        "index": 42,
+        "json": "```JSON\n\"end_charge_time\": 10\n```"
+    },
+    {
+        "predicted": " Please make sure the car charging finishes by 4am.",
+        "actual": "Please make sure the car charging finishes by 4 AM.",
+        "index": 16,
+        "json": "```JSON\n\"end_charge_time\": 4\n```"
+    },
+    {
+        "predicted": " ensure the car is fully charged by 6pm.",
+        "actual": "Ensure the car is fully charged by 6 PM.",
+        "index": 75,
+        "json": "```JSON\n\"end_charge_time\": 18\n```"
+    },
+    {
+        "predicted": " Ensure the car is fully charged by 5am.",
+        "actual": "Ensure the car is fully charged by 5 AM.",
+        "index": 22,
+        "json": "```JSON\n\"end_charge_time\": 5\n```"
+    },
+    {
+        "predicted": " Ensure the car is fully charged by 8 pm.",
+        "actual": "Ensure the car is fully charged by 8 PM.",
+        "index": 82,
+        "json": "```JSON\n\"end_charge_time\": 20\n```"
+    },
+    {
+        "predicted": " Charge the car until 8 a.m.",
+        "actual": "Charge the car until 8 AM.",
+        "index": 32,
+        "json": "```JSON\n\"end_charge_time\": 8\n```"
+    },
+    {
+        "predicted": " Charge the car until 3am.",
+        "actual": "Charge the car until 3 AM.",
+        "index": 14,
+        "json": "```JSON\n\"end_charge_time\": 3\n```"
+    },
+    {
+        "predicted": " ensure that the car is fully charged by 1 pm.",
+        "actual": "Ensure that the car is fully charged by 1 PM.",
+        "index": 53,
+        "json": "```JSON\n\"end_charge_time\": 13\n```"
+    },
+    {
+        "predicted": " charge the car by 7 pm.",
+        "actual": "Charge the car by 7 PM.",
+        "index": 77,
+        "json": "```JSON\n\"end_charge_time\": 19\n```"
+    },
+    {
+        "predicted": " Charge the car by 5am.",
+        "actual": "Charge the car by 5 AM.",
+        "index": 23,
+        "json": "```JSON\n\"end_charge_time\": 5\n```"
+    },
+    {
+        "predicted": " I need the car to be fully charged by 8am.",
+        "actual": "I need the car to be fully charged by 8 AM.",
+        "index": 34,
+        "json": "```JSON\n\"end_charge_time\": 8\n```"
+    },
+    {
+        "predicted": " I need the car to be fully charged by 6 pm.",
+        "actual": "I need the car to be fully charged by 6 PM.",
+        "index": 74,
+        "json": "```JSON\n\"end_charge_time\": 18\n```"
+    },
+    {
+        "predicted": " Charge the cartil 6am.",
+        "actual": "Charge the car till 6 AM.",
+        "index": 26,
+        "json": "```JSON\n\"end_charge_time\": 6\n```"
+    },
+    {
+        "predicted": " Charge the car until 3am.",
+        "actual": "Charge the car until 3 AM.",
+        "index": 12,
+        "json": "```JSON\n\"end_charge_time\": 3\n```"
+    },
+    {
+        "predicted": " Charge the car by midnight.",
+        "actual": "Charge the car by midnight.",
+        "index": 3,
+        "json": "```JSON\n\"end_charge_time\": 0\n```"
+    },
+    {
+        "predicted": " Charge the car till 4pm.",
+        "actual": "Charge the car till 4 PM.",
+        "index": 64,
+        "json": "```JSON\n\"end_charge_time\": 16\n```"
+    },
+    {
+        "predicted": " Charge the car until 2 p.m.",
+        "actual": "Charge the car until 2 PM.",
+        "index": 58,
+        "json": "```JSON\n\"end_charge_time\": 14\n```"
+    },
+    {
+        "predicted": " Charge the car until 8pm.",
+        "actual": "Charge the car until 8 PM.",
+        "index": 81,
+        "json": "```JSON\n\"end_charge_time\": 20\n```"
+    },
+    {
+        "predicted": " Charge the car till 11am.",
+        "actual": "Charge the car till 11 AM.",
+        "index": 45,
+        "json": "```JSON\n\"end_charge_time\": 11\n```"
+    },
+    {
+        "predicted": " Ensure the car is charged by 8pm.",
+        "actual": "Ensure the car is charged by 8 PM.",
+        "index": 83,
+        "json": "```JSON\n\"end_charge_time\": 20\n```"
+    },
+    {
+        "predicted": " Charge the car till 9pm.",
+        "actual": "Charge the car till 9 PM.",
+        "index": 85,
+        "json": "```JSON\n\"end_charge_time\": 21\n```"
+    },
+    {
+        "predicted": " Charge the car until 11 a.m.",
+        "actual": "Charge the car until 11 AM.",
+        "index": 44,
+        "json": "```JSON\n\"end_charge_time\": 11\n```"
+    },
+    {
+        "predicted": " charge the car up by 10 pm.",
+        "actual": "Charge the car up by 10 PM.",
+        "index": 89,
+        "json": "```JSON\n\"end_charge_time\": 22\n```"
+    },
+    {
+        "predicted": " charge the car until 2pm.",
+        "actual": "Charge the car until 2 PM.",
+        "index": 59,
+        "json": "```JSON\n\"end_charge_time\": 14\n```"
+    },
+    {
+        "predicted": " Charge the car by 1 a.m.",
+        "actual": "Charge the car by 1 AM.",
+        "index": 6,
+        "json": "```JSON\n\"end_charge_time\": 1\n```"
+    },
+    {
+        "predicted": " Ensure that the car is charged by 1pm.",
+        "actual": "Ensure that the car is charged by 1 PM.",
+        "index": 52,
+        "json": "```JSON\n\"end_charge_time\": 13\n```"
+    },
+    {
+        "predicted": " charge the car until 4am.",
+        "actual": "Charge the car until 4 AM.",
+        "index": 17,
+        "json": "```JSON\n\"end_charge_time\": 4\n```"
+    },
+    {
+        "predicted": " Charge the car till 4pm.",
+        "actual": "Charge the car till 4 PM.",
+        "index": 67,
+        "json": "```JSON\n\"end_charge_time\": 16\n```"
+    },
+    {
+        "predicted": " Schedule the car to be fully charged by 9 pm.",
+        "actual": "Schedule the car to be fully charged by 9 PM.",
+        "index": 86,
+        "json": "```JSON\n\"end_charge_time\": 21\n```"
+    },
+    {
+        "predicted": " charge the car by 5 a.m.",
+        "actual": "Charge the car by 5 AM.",
+        "index": 20,
+        "json": "```JSON\n\"end_charge_time\": 5\n```"
+    },
+    {
+        "predicted": " I need the car to be fully charged by 3pm.",
+        "actual": "I need the car to be fully charged by 3 PM.",
+        "index": 62,
+        "json": "```JSON\n\"end_charge_time\": 15\n```"
+    },
+    {
+        "predicted": " Charge the car by midnight.",
+        "actual": "Charge the car by midnight.",
+        "index": 0,
+        "json": "```JSON\n\"end_charge_time\": 0\n```"
+    },
+    {
+        "predicted": " Set the charging to complete by 10am.",
+        "actual": "Set the charging to complete by 10 AM.",
+        "index": 43,
+        "json": "```JSON\n\"end_charge_time\": 10\n```"
+    },
+    {
+        "predicted": " set the car to be charged up by midnight.",
+        "actual": "Set the car to be charged up by midnight.",
+        "index": 2,
+        "json": "```JSON\n\"end_charge_time\": 0\n```"
+    },
+    {
+        "predicted": " Charge the car by 5 pm.",
+        "actual": "Charge the car by 5 PM.",
+        "index": 70,
+        "json": "```JSON\n\"end_charge_time\": 17\n```"
+    },
+    {
+        "predicted": " Charge the car until 2am.",
+        "actual": "Charge the car until 2 AM.",
+        "index": 9,
+        "json": "```JSON\n\"end_charge_time\": 2\n```"
+    },
+    {
+        "predicted": " Charge my EV until 6 in the morning.",
+        "actual": "Charge my EV until 6 in the morning.",
+        "index": 27,
+        "json": "```JSON\n\"end_charge_time\": 6\n```"
+    },
+    {
+        "predicted": " Charge the car by 8am.",
+        "actual": "Charge the car by 8 AM.",
+        "index": 33,
+        "json": "```JSON\n\"end_charge_time\": 8\n```"
+    },
+    {
+        "predicted": " Ensure the car is fully charged by 1am.",
+        "actual": "Ensure the car is fully charged by 1 AM.",
+        "index": 7,
+        "json": "```JSON\n\"end_charge_time\": 1\n```"
+    },
+    {
+        "predicted": " Charge the car till 1 p.m. in the afternoon.",
+        "actual": "Charge the car till 1 PM in the afternoon.",
+        "index": 55,
+        "json": "```JSON\n\"end_charge_time\": 13\n```"
+    },
+    {
+        "predicted": " I need the car to be charged by 10 pm.",
+        "actual": "I need the car to be charged by 10 PM.",
+        "index": 90,
+        "json": "```JSON\n\"end_charge_time\": 22\n```"
+    },
+    {
+        "predicted": " Charge the car until 6am.",
+        "actual": "Charge the car until 6 AM.",
+        "index": 24,
+        "json": "```JSON\n\"end_charge_time\": 6\n```"
+    },
+    {
+        "predicted": " Please ensure the car is fully charged by five in the morning.",
+        "actual": "Please ensure the car is fully charged by 5 in the morning.",
+        "index": 21,
+        "json": "```JSON\n\"end_charge_time\": 5\n```"
+    },
+    {
+        "predicted": " Charge the car until 12 p.m.",
+        "actual": "Charge the car until 12 PM.",
+        "index": 48,
+        "json": "```JSON\n\"end_charge_time\": 12\n```"
+    },
+    {
+        "predicted": " Charge the car by 11 a.m.",
+        "actual": "Charge the car by 11 AM.",
+        "index": 46,
+        "json": "```JSON\n\"end_charge_time\": 11\n```"
+    },
+    {
+        "predicted": " Charge the car until 7pm.",
+        "actual": "Charge the car until 7 PM.",
+        "index": 79,
+        "json": "```JSON\n\"end_charge_time\": 19\n```"
+    },
+    {
+        "predicted": " charge the car until 10am.",
+        "actual": "Charge the car until 10 AM.",
+        "index": 41,
+        "json": "```JSON\n\"end_charge_time\": 10\n```"
+    },
+    {
+        "predicted": " Charge the car till 12 p.m.",
+        "actual": "Charge the car till 12 PM.",
+        "index": 49,
+        "json": "```JSON\n\"end_charge_time\": 12\n```"
+    },
+    {
+        "predicted": " Please ensure the car is charged by 8 a.m.",
+        "actual": "Please ensure the car is charged by 8 AM.",
+        "index": 35,
+        "json": "```JSON\n\"end_charge_time\": 8\n```"
+    },
+    {
+        "predicted": " Please ensure the car is charged by 8 pm.",
+        "actual": "Please ensure the car is charged by 8 PM.",
+        "index": 80,
+        "json": "```JSON\n\"end_charge_time\": 20\n```"
+    },
+    {
+        "predicted": " Ensure the car is charged by 6pm.",
+        "actual": "Ensure the car is charged by 6 PM.",
+        "index": 72,
+        "json": "```JSON\n\"end_charge_time\": 18\n```"
+    },
+    {
+        "predicted": " Charge the car by 7pm.",
+        "actual": "Charge the car by 7 PM.",
+        "index": 76,
+        "json": "```JSON\n\"end_charge_time\": 19\n```"
+    },
+    {
+        "predicted": " Charge the car until 11 a.m.",
+        "actual": "Charge the car until 11 AM.",
+        "index": 47,
+        "json": "```JSON\n\"end_charge_time\": 11\n```"
+    },
+    {
+        "predicted": " charge the car to 1am.",
+        "actual": "Charge the car till 1 AM.",
+        "index": 5,
+        "json": "```JSON\n\"end_charge_time\": 1\n```"
+    },
+    {
+        "predicted": " Charge the car by 10 pm.",
+        "actual": "Charge the car by 10 PM.",
+        "index": 88,
+        "json": "```JSON\n\"end_charge_time\": 22\n```"
+    },
+    {
+        "predicted": " Set the car to be fully charged by 2am.",
+        "actual": "Set the car to be fully charged by 2 AM.",
+        "index": 10,
+        "json": "```JSON\n\"end_charge_time\": 2\n```"
+    },
+    {
+        "predicted": " charge the car by 4pm.",
+        "actual": "Charge the car by 4 PM.",
+        "index": 65,
+        "json": "```JSON\n\"end_charge_time\": 16\n```"
+    },
+    {
+        "predicted": " Charge my car by 3am.",
+        "actual": "Charge my car by 3 AM.",
+        "index": 13,
+        "json": "```JSON\n\"end_charge_time\": 3\n```"
+    },
+    {
+        "predicted": " Charge the car until noon.",
+        "actual": "Charge the car until noon.",
+        "index": 50,
+        "json": "```JSON\n\"end_charge_time\": 12\n```"
+    },
+    {
+        "predicted": " Charge the car by 6pm.",
+        "actual": "Charge the car by 6 PM.",
+        "index": 73,
+        "json": "```JSON\n\"end_charge_time\": 18\n```"
+    },
+    {
+        "predicted": " Charge the car until 11 p.m.",
+        "actual": "Charge the car until 11 PM.",
+        "index": 92,
+        "json": "```JSON\n\"end_charge_time\": 23\n```"
+    },
+    {
+        "predicted": " Charge the car by 4am.",
+        "actual": "Charge the car by 4 AM.",
+        "index": 19,
+        "json": "```JSON\n\"end_charge_time\": 4\n```"
+    },
+    {
+        "predicted": " Charge the car by 5pm.",
+        "actual": "Charge the car by 5 PM.",
+        "index": 69,
+        "json": "```JSON\n\"end_charge_time\": 17\n```"
+    },
+    {
+        "predicted": " Ensure the car is fully charged by 10 pm.",
+        "actual": "Ensure the car is fully charged by 10 PM.",
+        "index": 91,
+        "json": "```JSON\n\"end_charge_time\": 22\n```"
+    },
+    {
+        "predicted": " Please make sure the car is charged by noon.",
+        "actual": "Please make sure the car is charged by noon.",
+        "index": 51,
+        "json": "```JSON\n\"end_charge_time\": 12\n```"
+    },
+    {
+        "predicted": " Set the car's charging to be complete by 9am.",
+        "actual": "Set the car's charging to be complete by 9 AM.",
+        "index": 36,
+        "json": "```JSON\n\"end_charge_time\": 9\n```"
+    },
+    {
+        "predicted": " Charge the car until 2am.",
+        "actual": "Charge the car until 2 AM.",
+        "index": 8,
+        "json": "```JSON\n\"end_charge_time\": 2\n```"
+    },
+    {
+        "predicted": " Charge the car until 7am.",
+        "actual": "Charge the car until 7 AM.",
+        "index": 31,
+        "json": "```JSON\n\"end_charge_time\": 7\n```"
+    },
+    {
+        "predicted": " Charge the car by 2pm.",
+        "actual": "Charge the car by 2 PM.",
+        "index": 56,
+        "json": "```JSON\n\"end_charge_time\": 14\n```"
+    },
+    {
+        "predicted": " Charge the car until 3pm.",
+        "actual": "Charge the car until 3 PM.",
+        "index": 60,
+        "json": "```JSON\n\"end_charge_time\": 15\n```"
+    },
+    {
+        "predicted": " Make sure the car is fully charged by 7am.",
+        "actual": "Make sure the car is fully charged by 7 AM.",
+        "index": 29,
+        "json": "```JSON\n\"end_charge_time\": 7\n```"
+    },
+    {
+        "predicted": " initiate the charging process such that my car should be fully charged by 9am.",
+        "actual": "Initiate the charging process such that my car should be fully charged by 9 AM.",
+        "index": 39,
+        "json": "```JSON\n\"end_charge_time\": 9\n```"
+    },
+    {
+        "predicted": " Charge the car by 7pm.",
+        "actual": "Charge the car by 7 PM.",
+        "index": 78,
+        "json": "```JSON\n\"end_charge_time\": 19\n```"
+    },
+    {
+        "predicted": " charge the car until 5pm.",
+        "actual": "Charge the car until 5 PM.",
+        "index": 71,
+        "json": "```JSON\n\"end_charge_time\": 17\n```"
+    },
+    {
+        "predicted": " Ensure the car is fully charged by 3am.",
+        "actual": "Ensure the car is fully charged by 3 AM.",
+        "index": 15,
+        "json": "```JSON\n\"end_charge_time\": 3\n```"
+    },
+    {
+        "predicted": " Charge the car until 2pm in the afternoon.",
+        "actual": "Charge the car until 2 PM in the afternoon.",
+        "index": 57,
+        "json": "```JSON\n\"end_charge_time\": 14\n```"
+    },
+    {
+        "predicted": " Charge the car till 1 a.m.",
+        "actual": "Charge the car till 1 AM.",
+        "index": 4,
+        "json": "```JSON\n\"end_charge_time\": 1\n```"
+    },
+    {
+        "predicted": " I want my car to be charged by 2am.",
+        "actual": "I want my car to be charged by 2 AM.",
+        "index": 11,
+        "json": "```JSON\n\"end_charge_time\": 2\n```"
+    },
+    {
+        "predicted": " Charge the car until 6am.",
+        "actual": "Charge the car until 6 AM.",
+        "index": 25,
+        "json": "```JSON\n\"end_charge_time\": 6\n```"
+    },
+    {
+        "predicted": " The car needs to be completely charged by 9am.",
+        "actual": "The car needs to be completely charged by 9 AM.",
+        "index": 37,
+        "json": "```JSON\n\"end_charge_time\": 9\n```"
+    }
+]

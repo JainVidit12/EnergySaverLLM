@@ -17,14 +17,30 @@ class AudioProcessor():
     
     def __init__(
         self,
-        model_name : Optional[str] = "openai/whisper-base"
+        model_name : Optional[str] = "openai/whisper-base",
+        gpu_no : Optional[int] = None
     ):
         self._processor = WhisperProcessor.from_pretrained(model_name)
-        self._model = WhisperForConditionalGeneration.from_pretrained(model_name)
+
+        if gpu_no is None:
+            self._model = WhisperForConditionalGeneration.from_pretrained(model_name)
+        else:
+            self._model = WhisperForConditionalGeneration.from_pretrained(model_name, device_map = gpu_no)
         self._model.config.forced_decoder_ids = None
 
 
-    def processAudio(self, data, sampling_rate) -> str:
+
+    def _downSample(data, sample_rate, target_sampling_rate = 16000):
+        number_of_samples = round(len(data) * float(target_sampling_rate) / sample_rate)
+        data = sps.resample(data, number_of_samples)
+        return data
+
+    def processAudio(self, path) -> str:
+        
+
+        data, sample_rate = sf.read(path)
+        if sample_rate > 16000:
+            data = self._downSample(data, sample_rate)
         input_features = self._processor(data, sampling_rate = sampling_rate, return_tensors="pt").input_features 
         predicted_ids = self._model.generate(input_features)
         transcription = self._processor.batch_decode(predicted_ids, skip_special_tokens=True)

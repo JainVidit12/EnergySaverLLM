@@ -1,37 +1,81 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
+from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig, pipeline
 from typing import Optional
 import json
 import datetime
 import os
 import torch
 
-SYSTEM_MSG = """You are a chatbot to 
+from AudioProcessor import AudioProcessor
+
+SYSTEM_MSG = """<|system|>
+You are a chatbot to 
 (1) write JSON to edit parameters as per user request for Electric Vehicle Charging.
 
 --- JSON ---
 {json} 
 
-Here are some example questions and their answers and codes:
---- EXAMPLES ---
-{example_qa}
----
-
-Note that only parameters you mention will be changed.
+Only mention parameters requested by the user. 
+If charge level or time is not mentioned by the user, DO NOT MENTION IT. The prevailing value will persist.
+ONLY MENTION PARAMETERS TO BE CHANGED. Do not repeat the description fields. 
 You just need to write JSON snippet in ```JSON ...``` block.
 
-Current time: 11 AM
+<|end|>
 
-Here is the user request:
-{request}
+{example_qa}
 
-Answer JSON:
+<|user|>
+{request}<|end|>
+
+<|assistant|>
+"""
+
+SYSTEM_MSG_TIME_ADJUST = """<|system|>
+You are a chatbot to adjust the user request text. The text might contain one or more of the following:
+
+ - A percentage value
+ - A time value
+
+You might need to make one or more of the following adjustments:
+(1) If the request mentions a time, the last two digits are ALWAYS the minute digits. Insert a colon(:) before the minute digits, or replace the dot(.) with a colon (:).
+ THERE SHOULD ALWAYS BE TWO DIGITS AFTER THE COLON (:).
+(2) If the request has a whitespace between two numerical digits followed by a %, remove the whitespace.
+DO NOT CHANGE THE DIGIT VALUES, ONLY INSERT OR REMOVE CHARACTERS BASED ON THE ABOVE INSTRUCTIONS. The times are in 12 Hour format, DO NOT CONVERT TO 24 Hour format.
+DO NOT MIX PERCENTAGE DIGITS WITH TIME DIGITS.
+
+<|end|>
+
+<|user|>
+Charge the car till 9 0%.
+<|end|>
+<|assistant|>
+Charge the car till 90%
+<|end|>
+
+<|user|>
+Charge the car by 215 PM.
+<|end|>
+<|assistant|>
+Charge the car by 2:15 PM.
+<|end|>
+
+<|user|>
+Charge the car by 1015 AM.
+<|end|>
+<|assistant|>
+Charge the car by 10:15 AM.
+<|end|>
+
+<|user|>
+{request}<|end|>
+
+<|assistant|>
 """
 
 class ChargingAgent():
 
     def __init__(
         self,
-        model_name : Optional[str] = "google/gemma-7b-it",
+        model_name : Optional[str] = "google/codegemma-2b",
         example_qa="",
         json_filepath="",
         evaluate=False,
@@ -49,16 +93,32 @@ class ChargingAgent():
                                 device_map=0, 
                                 quantization_config=quantize,
                                 torch_dtype=torch.float16,
-                                attn_implementation = "flash_attention_2")
+                                attn_implementation = "flash_attention_2",
+                                trust_remote_code=True)
         else:
             self._model = AutoModelForCausalLM.from_pretrained(model_name, 
                                 device_map=0,
                                 torch_dtype=torch.float16,
-                                attn_implementation = "flash_attention_2").to(0)
+                                attn_implementation = "flash_attention_2",
+                                trust_remote_code=True).to(0)
         
 
         self._tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+        self._pipe = pipeline(
+            "text-generation",
+            model = self._model,
+            tokenizer = self._tokenizer,
+        )
+
+        self._generation_args = {
+            "max_new_tokens": 50,
+            "return_full_text": False,
+            "temperature": 0.0001,
+            "do_sample": True,
+        }
         
+        self._audio_processor = AudioProcessor(gpu_no = 1)
 
         self._json_filepath = json_filepath
         with open(json_filepath, 'r') as f:
@@ -68,23 +128,45 @@ class ChargingAgent():
         self,
         message : str
     ):
+        if '.wav' in message  or '.WAV' in message:
+            message = self._audio_processor.processAudio(message)
+        
+
+            message_to_adjust = SYSTEM_MSG_TIME_ADJUST.format(
+                request = message
+            )
+
+            intermediate_output = self._pipe(message_to_adjust, **self._generation_args)
+
+            message = intermediate_output[0]['generated_text']
+            message = message.partition('\n')[0]  
+            print("adjusted message: " + message)
+
+
+        
         message = SYSTEM_MSG.format(
             json = self._json_str,
             example_qa = self._example_qa,
             request = message
         )
-        input_ids = self._tokenizer(message, return_tensors="pt").to("cuda")
+        # input_ids = self._tokenizer(message, return_tensors="pt").to("cuda")
 
-        outputs = self._model.generate(**input_ids, max_new_tokens = 20)
+        # outputs = self._model.generate(**input_ids, max_new_tokens = 50)
 
-        output_text = self._tokenizer.decode(outputs[0])
+        # output_text = self._tokenizer.decode(outputs[0])
+
+        output = self._pipe(message, **self._generation_args)
+
+        output_text = output[0]['generated_text']
 
         # print(f"output string: {output_text}")
 
         answer_idx = output_text.find('Answer JSON:')
         output_text = output_text[answer_idx:]
-
-        extracted_json = extract_code(output_text)
+        try:
+            extracted_json = extract_code(output_text)
+        except:
+            return None
 
         # print(f"processed output: {extracted_json}")
 
@@ -97,6 +179,8 @@ class ChargingAgent():
         _replace_json(self._json_str, self._json_filepath)
 
         return output_text
+    
+    
     def getModel(self):
         return self._model
 

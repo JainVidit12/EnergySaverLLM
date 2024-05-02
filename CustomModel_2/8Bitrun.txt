@@ -1,0 +1,514 @@
+transcription:  We need the car at 55% battery by 201 PM for the afternoon meeting.
+adjusted message: We need the car at 55% battery by 2:01 PM for the afternoon meeting.
+transcription:  We need the car at 98% battery by 6.35 AM for the morning commute to work.
+adjusted message: We need the car at 98% battery by 6:35 AM for the morning commute to work.
+transcription:  We need the car at 72% battery by 538 AM for work.
+adjusted message: We need the car at 72% battery by 5:38 AM for work.
+transcription:  We need the car at 98% battery by 518 AM for work.
+adjusted message: We need the car at 98% battery by 5:18 AM for work.
+transcription:  We need the car 82% battery by 11.20am to go to work.
+adjusted message: We need the car with 82% battery by 11:20 AM to go to work.
+transcription:  We need the car at 80% battery by 9.44 AM for the morning commute.
+adjusted message: We need the car at 80% battery by 9:44 AM for the morning commute.
+transcription:  We need the car at 21% battery by 1.18am for the early morning commute.
+adjusted message: We need the car at 21% battery by 1:18 AM for the early morning commute.
+transcription:  We will need the car at 29% battery by 706 PM for the commute home.
+adjusted message: We will need the car at 29% battery by 7:06 PM for the commute home.
+transcription:  We need the car at 42% battery by 1120 AM.
+adjusted message: We need the car at 42% battery by 11:20 AM.
+transcription:  We need the car at 10% battery by 337 pm for the school pickup.
+adjusted message: We need the car at 10% battery by 3:37 PM for the school pickup.
+transcription:  We need the car at 92% battery by 11 PM for the overnight charging.
+adjusted message: We need the car at 92% battery by 11:00 PM for the overnight charging.
+transcription:  We need the car at 41% battery by Z118 AM.
+adjusted message: We need the car at 41% battery by 11:18 AM.
+predicted:
+{'end_charge_level': 0.41, 'end_charge_time': '0118'}
+predicted from audio:
+{'end_charge_level': 0.41, 'end_charge_time': '1118'}
+actual:
+{'end_charge_time': '0118', 'end_charge_level': 0.41}
+prompt: We need the car at 41% battery by 01:18 AM.
+
+transcription:  We need the car at 51% battery by 518 AM for the early morning commute.
+adjusted message: We need the car at 51% battery by 5:18 AM for the early morning commute.
+transcription:  We need the car at 21% battery by 6.35 AM for work.
+adjusted message: We need the car at 21% battery by 6:35 AM for work.
+transcription:  We need the car at 44% battery by 3.29 AM for an early morning commute.
+adjusted message: We need the car at 44% battery by 3:29 AM for an early morning commute.
+transcription:  We need the car at 92% battery by 210 pm for the trip.
+adjusted message: We need the car at 92% battery by 2:10 PM for the trip.
+transcription:  We need the car at 16% battery by 502pm.
+adjusted message: We need the car at 16% battery by 5:02 PM.
+transcription:  We need the car at 60% battery by 539pm for our commute home.
+adjusted message: We need the car at 60% battery by 5:39 PM for our commute home.
+transcription:  We need the car at 10% battery by 2.26am for an early morning departure.
+adjusted message: We need the car at 10% battery by 2:26 AM for an early morning departure.
+transcription:  We need the car at 54% battery by 654 PM for the drive home.
+adjusted message: We need the car at 54% battery by 6:54 PM for the drive home.
+transcription:  We need the car at 76% battery by 201 PM for the school pickup.
+adjusted message: We need the car at 76% battery by 8:10 PM for the school pickup.
+predicted:
+{'end_charge_level': 0.76, 'end_charge_time': '1401'}
+predicted from audio:
+{'end_charge_level': 0.76, 'end_charge_time': '2010'}
+actual:
+{'end_charge_time': '1401', 'end_charge_level': 0.76}
+prompt: We need the car at 76% battery by 2:01 PM for the school pickup.
+
+transcription:  We need the car at 83% battery by 11.07 AM for work.
+adjusted message: We need the car at 83% battery by 11:07 AM for work.
+transcription:  We need the car at 11% battery by 1018 AM for the morning commute.
+adjusted message: We need the car at 11% battery by 10:18 AM for the morning commute.
+transcription:  We need the car at 11% battery by 3.29 AM for an early morning drive.
+adjusted message: We need the car at 11% battery by 3:29 AM for an early morning drive.
+transcription:  We need the car at 11% battery by 3.30 a.m. for an early morning drive.
+adjusted message: We need the car at 11% battery by 3:30 AM for an early morning drive.
+transcription:  We need the car at 49% battery by 226 AM for an early morning departure.
+adjusted message: We need the car at 49% battery by 2:26 AM for an early morning departure.
+transcription:  We need the car at 51% battery by 402 AM for an early morning commute.
+adjusted message: We need the car at 51% battery by 4:02 AM for an early morning commute.
+transcription:  We need the car at 11% charge by 2.01pm for a school pickup.
+adjusted message: We need the car at 11% charge by 2:01 PM for a school pickup.
+transcription:  We need the car at 80% battery by 646pm for our dinner reservation.
+adjusted message: We need the car at 80% battery by 6:46 PM for our dinner reservation.
+transcription:  We need the car at 38% battery by 1207 PM for our meeting.
+adjusted message: We need the car at 38% battery by 12:07 PM for our meeting.
+transcription:  We need the car at 42% battery by 420 PM for a meeting.
+adjusted message: We need the car at 42% battery by 4:20 PM for a meeting.
+transcription:  We need the car at 67% battery by 8.33 a.m. before heading to work.
+adjusted message: We need the car at 67% battery by 8:33 a.m. before heading to work.
+transcription:  We need the car at 42% battery by 8.20pm for the dinner party.
+adjusted message: We need the car at 42% battery by 8:20 PM for the dinner party.
+transcription:  We need the car at 31% battery by 12.19 AM.
+adjusted message: We need the car at 31% battery by 12:19 AM.
+transcription:  We need the car at 41% battery by 4.23 pm when heading to the school.
+adjusted message: We need the car at 41% battery by 4:23 PM when heading to the school.
+transcription:  We need the car at 67% battery by 12.11 pm.
+adjusted message: We need the car at 67% battery by 12:11 PM.
+transcription:  We need the car at 43% battery by 9.44 AM.
+adjusted message: We need the car at 43% battery by 9:44 AM.
+transcription:  We need the car at 80% battery by 12.11 pm for our lunch meeting.
+adjusted message: We need the car at 80% battery by 12:11 PM for our lunch meeting.
+transcription:  We need the car at 80% battery by 8.19 pm for the dinner party.
+adjusted message: We need the car at 80% battery by 8:19 PM for the dinner party.
+transcription:  We need the car at 81% battery by 616 AM for work.
+adjusted message: We need the car at 81% battery by 6:16 AM for work.
+transcription:  We need the car at 80% battery by 10.44pm for the overnight charging.
+adjusted message: We need the car at 80% battery by 10:44 PM for the overnight charging.
+transcription:  We need the car at 74% battery by 7.23 pm for the dinner party.
+adjusted message: We need the car at 74% battery by 7:23 PM for the dinner party.
+transcription:  We need the car at 98% battery by 833 AM for work.
+adjusted message: We need the car at 98% battery by 8:33 AM for work.
+transcription:  We need the car charged to 82% by 706pm for the dinner party.
+adjusted message: We need the car charged to 82% by 7:06 PM for the dinner party.
+transcription:  We need the car at 65% battery by 8.19 pm for the dinner party.
+adjusted message: We need the car at 65% battery by 8:19 PM for the dinner party.
+transcription:  We need the car at 41% battery by 502 pm.
+adjusted message: We need the car at 41% battery by 5:02 PM.
+transcription:  We need the car at 71% battery by 137 pm.
+adjusted message: We need the car at 71% battery by 1:17 PM.
+predicted:
+{'end_charge_level': 0.71, 'end_charge_time': '1337'}
+predicted from audio:
+{'end_charge_level': 0.71, 'end_charge_time': '1117'}
+actual:
+{'end_charge_time': '1337', 'end_charge_level': 0.71}
+prompt: We need the car at 71% battery by 1:37 PM.
+
+transcription:  We need the car at 98% battery by 11.12 pm for the late night drive.
+adjusted message: We need the car at 98% battery by 11:12 PM for the late night drive.
+transcription:  We need the car at 23% battery by 337 pm for the school pickup.
+adjusted message: We need the car at 23% battery by 3:37 PM for the school pickup.
+transcription:  We need the car at 72% battery by 502 PM for our work commute.
+adjusted message: We need the car at 72% battery by 5:02 PM for our work commute.
+transcription:  We need the car at 43% battery by 330 AM for an early morning departure.
+adjusted message: We need the car at 43% battery by 3:30 AM for an early morning departure.
+transcription:  We need the car at 42% battery by 452 AM for an early morning commute.
+adjusted message: We need the car at 42% battery by 4:52 AM for an early morning commute.
+transcription:  We need the car at 29% battery by 831am for the morning commute.
+adjusted message: We need the car at 29% battery by 8:31 AM for the morning commute.
+transcription:  We need the car at 41% battery by 1216 AM.
+adjusted message: We need the car at 41% battery by 12:16 AM.
+transcription:  We need the car at 82% battery by 518 AM for work tomorrow.
+adjusted message: We need the car at 82% battery by 5:18 AM for work tomorrow.
+transcription:  We need the car at 84% battery by 423pm for our work meeting.
+adjusted message: We need the car at 84% battery by 4:23 PM for our work meeting.
+transcription:  We must have the car at 88% battery by 12.11 pm.
+adjusted message: We must have the car at 88% battery by 12:11 PM.
+transcription:  We need the car to be at 80% battery by 539pm for our trip to the school.
+adjusted message: We need the car to be at 80% battery by 5:39 PM for our trip to the school.
+transcription:  We need the car at 42% battery by 7.23 pm for the party.
+adjusted message: We need the car at 42% battery by 7:23 PM for the party.
+transcription:  We need the car at 80% battery by 11.20 AM for the meeting.
+adjusted message: We need the car at 80% battery by 11:20 AM for the meeting.
+transcription:  We need the car at 41% battery by 9.58 pm for the movie night.
+adjusted message: We need the car at 41% battery by 9:58 PM for the movie night.
+transcription:  We need the car charge to 80% by 1018 AM for work.
+adjusted message: We need the car charge to 80% by 10:18 AM for work.
+transcription:  We need the car at 43% battery by 2.26am for our early morning departure.
+adjusted message: We need the car at 43% battery by 2:26 AM for our early morning departure.
+transcription:  We need the car at 98% battery by 154 AM.
+adjusted message: We need the car at 98% battery by 15:40 AM.
+predicted:
+{'end_charge_level': 0.98, 'end_charge_time': '0154'}
+predicted from audio:
+{'end_charge_level': 0.98, 'end_charge_time': '1540'}
+actual:
+{'end_charge_time': '0154', 'end_charge_level': 0.98}
+prompt: We need the car at 98% battery by 1:54 AM.
+
+transcription:  We need the car charge to 60% by 402 AM for the early morning drive.
+adjusted message: We need the car charge to 60% by 4:02 AM for the early morning drive.
+transcription:  We need the car to be at 29% battery by 1018 AM for a meeting.
+adjusted message: We need the car to be at 29% battery by 10:18 AM for a meeting.
+transcription:  We need the car to be at 44% battery by 616 AM for the morning commute.
+adjusted message: We need the car to be at 44% battery by 6:16 AM for the morning commute.
+transcription:  We need the car at 76% battery by 10.44 pm.
+adjusted message: We need the car at 76% battery by 10:44 PM.
+transcription:  We need the car at 72% battery by 330 AM for an early morning road trip.
+adjusted message: We need the car at 72% battery by 3:30 AM for an early morning road trip.
+transcription:  We need the car at 72% battery by 137 pm for a meeting.
+adjusted message: We need the car at 72% battery by 1:37 PM for a meeting.
+transcription:  We need the car at 41% battery by 9.44 AM for work.
+adjusted message: We need the car at 41% battery by 9:44 AM for work.
+transcription:  We need the car at 65% battery by 329 AM for an early morning commute.
+adjusted message: We need the car at 65% battery by 3:29 AM for an early morning commute.
+transcription:  We need the car at 42% battery by 201pm for the school pickup.
+adjusted message: We need the car at 42% battery by 2:01 PM for the school pickup.
+transcription:  We need the car to be charged to 11% by 10.44 pm for a late night drive.
+adjusted message: We need the car to be charged to 11% by 10:44 PM for a late night drive.
+transcription:  We need the car at 83% battery by 1014 AM for work.
+adjusted message: We need the car at 83% battery by 10:14 AM for work.
+transcription:  We need the car at 54% battery by 616 AM for the morning commute.
+adjusted message: We need the car at 54% battery by 6:16 AM for the morning commute.
+transcription:  We need the car at 86% battery by 539 pm.
+adjusted message: We need the car at 86% battery by 5:39 PM.
+transcription:  We need the car at 84% battery by 518 AM for an early morning commute.
+adjusted message: We need the car at 84% battery by 5:18 AM for an early morning commute.
+transcription:  We need the car at 42% battery by 210 pm for work.
+adjusted message: We need the car at 42% battery by 2:10 PM for work.
+transcription:  We need the car at 51% battery by 654 PM for the work commute.
+adjusted message: We need the car at 51% battery by 6:54 PM for the work commute.
+transcription:  We need the car at 60% battery by 706pm for our dinner reservation.
+adjusted message: We need the car at 60% battery by 7:06 PM for our dinner reservation.
+transcription:  We need the car at 80% battery by 954 pm.
+adjusted message: We need the car at 80% battery by 9:54 PM.
+transcription:  We need the car at 72% battery by 330 AM for an early morning road trip.
+adjusted message: We need the car at 72% battery by 3:30 AM for an early morning road trip.
+transcription:  We need the car at 60% battery by 831am to commute to work.
+adjusted message: We need the car at 60% battery by 8:31 AM to commute to work.
+transcription:  We need the car at 57% battery by 142pm for work.
+adjusted message: We need the car at 57% battery by 2:20 PM for work.
+predicted:
+{'end_charge_level': 0.57, 'end_charge_time': '1442'}
+predicted from audio:
+{'end_charge_level': 0.57, 'end_charge_time': '1420'}
+actual:
+{'end_charge_time': '1342', 'end_charge_level': 0.57}
+prompt: We need the car at 57% battery by 1:42 PM for work.
+
+transcription:  We need the car at 67% battery by 12.07 pm for our work meeting.
+adjusted message: We need the car at 67% battery by 12:07 PM for our work meeting.
+transcription:  We need the car at 44% battery by 1014 AM for work.
+adjusted message: We need the car at 44% battery by 10:14 AM for work.
+transcription:  We need the car at 51% battery by 2 tempm for our work meeting.
+adjusted message: We need the car at 51% battery by 2:00 PM for our work meeting.
+predicted:
+{'end_charge_level': 0.51, 'end_charge_time': '1410'}
+predicted from audio:
+{'end_charge_level': 0.51, 'end_charge_time': '1400'}
+actual:
+{'end_charge_time': '1410', 'end_charge_level': 0.51}
+prompt: We need the car at 51% battery by 2:10 PM for our work meeting.
+
+transcription:  We need the car at 80% battery by 330 AM for an early morning journey.
+adjusted message: We need the car at 80% battery by 3:30 AM for an early morning journey.
+transcription:  We need the car at 49% battery by 708 AM for work.
+adjusted message: We need the car at 49% battery by 7:08 AM for work.
+transcription:  We need the car at 11% battery by 3.30 a.m. for an early morning commute.
+adjusted message: We need the car at 11% battery by 3:30 AM for an early morning commute.
+transcription:  We need the car at 90% battery by 12.7 pm for the work meeting.
+adjusted message: We need the car at 90% battery by 12:70 PM for the work meeting.
+predicted:
+{'end_charge_level': 0.9, 'end_charge_time': '1207'}
+predicted from audio:
+{'end_charge_level': 0.9, 'end_charge_time': '1270'}
+actual:
+{'end_charge_time': '1207', 'end_charge_level': 0.9}
+prompt: We need the car at 90% battery by 12:07 PM for the work meeting.
+
+transcription:  We need the car at 44% battery by 538 AM for an early morning commute.
+adjusted message: We need the car at 44% battery by 5:38 AM for an early morning commute.
+transcription:  We need the car at 90% battery by 3.30am for an early morning road trip.
+adjusted message: We need the car at 90% battery by 3:30 AM for an early morning road trip.
+transcription:  We need the car at 47% battery by 142 pm.
+adjusted message: We need the car at 47% battery by 2:20 PM.
+predicted:
+{'end_charge_level': 0.47, 'end_charge_time': '1442'}
+predicted from audio:
+{'end_charge_level': 0.47, 'end_charge_time': '1420'}
+actual:
+{'end_charge_time': '1342', 'end_charge_level': 0.47}
+prompt: We need the car at 47% battery by 1:42 PM.
+
+transcription:  We need the car at 42% battery by 6.35 a.m. for work.
+adjusted message: We need the car at 42% battery by 6:35 a.m. for work.
+transcription:  We need to be at 90% battery by 452 AM for an early start.
+adjusted message: We need to be at 90% battery by 4:52 AM for an early start.
+transcription:  We need the car at 51% battery by 11.07 AM for our work meeting.
+adjusted message: We need the car at 51% battery by 11:07 AM for our work meeting.
+transcription:  We need the car at 58% battery by 12.16 AM for the overnight charging.
+adjusted message: We need the car at 58% battery by 12:16 AM for the overnight charging.
+transcription:  We need the car at 90% battery by 8.20 PM for the party.
+adjusted message: We need the car at 90% battery by 8:20 PM for the party.
+transcription:  We need the car at 21% battery when leaving work.
+adjusted message: We need the car at 21% battery when leaving work. (No change needed as there is no time value present.)
+transcription:  We need the car at 98% battery for our commute to work.
+adjusted message: We need the car at 98% battery for our commute to work.
+transcription:  We need the car at 72% battery when we arrive at the school.
+adjusted message: We need the car at 72% battery when we arrive at the school.
+transcription:  We need the car at 55% battery for the morning commute to work.
+adjusted message: We need the car at 55% battery for the morning commute to work.
+transcription:  We need the car at 76% battery by the time school ends.
+adjusted message: We need the car at 76% battery by the time school ends. (No change needed as there are no time or percentage values with formatting issues to adjust.)
+{// No changes needed as the instruction does not specify any formatting issues.
+}
+predicted:
+{'end_charge_level': 0.76}
+actual:
+{'end_charge_level': 0.76}
+prompt: We need the car at 76% battery by the time school ends.
+
+transcription:  We need the car at 80% battery for the commute to work.
+adjusted message: We need the car at 80% battery for the commute to work.
+transcription:  We only need the car with 51% charge for the short trip to the grocery store.
+adjusted message: We only need the car with a 51% charge for the short trip to the grocery store.
+transcription:  We need the car at 57% battery for the road trip to the beach.
+adjusted message: We need the car at 57% battery for the road trip to the beach.
+transcription:  We need the car at 67% battery when leaving for work.
+adjusted message: We need the car at 67% battery when leaving for work.
+transcription:  We need the car at 31% battery when we arrive at work.
+adjusted message: We need the car at 31% battery when we arrive at work.
+transcription:  We need the car at 29% battery for the work meeting tomorrow morning.
+adjusted message: We need the car at 29% battery for the work meeting tomorrow morning.
+transcription:  We need the car at 84% battery when we arrive at work.
+adjusted message: We need the car at 84% battery when we arrive at work.
+transcription:  need the car to be charged to 23% by the time you get to work.
+adjusted message: Need the car to be charged to 23% by the time you get to work.
+transcription:  We need the car at 42% battery when we leave for work.
+adjusted message: We need the car at 42% battery when we leave for work.
+transcription:  We need the car at 54% battery for the morning commute to work.
+adjusted message: We need the car at 54% battery for the morning commute to work.
+transcription:  We need the car at 41% battery before leaving for work.
+adjusted message: We need the car at 41% battery before leaving for work.
+transcription:  We need the car at 51% battery for the school pickup.
+adjusted message: We need the car at 51% battery for the school pickup.
+transcription:  We need the car at 65% battery before going to work tomorrow.
+adjusted message: We need the car at 65% battery before going to work tomorrow.
+transcription:  We need the car at 86% battery for our trip to the school.
+adjusted message: We need the car at 86% battery for our trip to the school.
+transcription:  We need the car at 41% battery for the commute to work.
+adjusted message: We need the car at 41% battery for the commute to work.
+transcription:  We need the car at 82% battery for the school pickup.
+adjusted message: We need the car at 8:20% battery for the school pickup.
+transcription:  We need the car at 38% battery when we arrive at school.
+adjusted message: We need the car at 38% battery when we arrive at school.
+transcription:  We need the car at 88% battery when going to work tomorrow.
+adjusted message: We need the car at 8:80% battery when going to work tomorrow.
+{"end_charge_level": 0.8,
+}
+predicted:
+{'end_charge_level': 0.88}
+actual:
+{'end_charge_level': 0.88}
+prompt: We need the car at 88% battery when going to work tomorrow.
+
+transcription:  We need the car at 16% battery before leaving for work.
+adjusted message: We need the car at 16% battery before leaving for work. (No change needed as there are no time or percentage values with formatting issues.)
+transcription:  We need the car at 78% battery for the trip to the grocery store.
+adjusted message: We need the car at 78% battery for the trip to the grocery store.
+transcription:  We need the car at 86% battery when we arrive at the school.
+adjusted message: We need the car at 86% battery when we arrive at the school.
+transcription:  We need the car at 58% battery when we arrive at work.
+adjusted message: We need the car at 58% battery when we arrive at work.
+transcription:  We need the car at 42% battery for the morning commute to work.
+adjusted message: We need the car at 42% battery for the morning commute to work.
+transcription:  We need the car at 90% battery level before leaving for work.
+adjusted message: We need the car at 90% battery level before leaving for work.
+transcription:  We need the car at 47% battery when we leave for work tomorrow.
+adjusted message: We need the car at 47% battery when we leave for work tomorrow. (No change needed as there are no time or percentage formatting issues to address.)
+predicted:
+{'end_charge_level': 0.47}
+actual:
+{'end_charge_level': 0.47}
+prompt: We need the car at 47% battery when we leave for work tomorrow.
+
+transcription:  We need the car at 35% battery for the commute to work.
+adjusted message: We need the car at 35% battery for the commute to work.
+transcription:  We need the car at 11% battery for the morning commute to work.
+adjusted message: We need the car at 11% battery for the morning commute to work.
+transcription:  We need the car at 49% battery for the morning commute to work.
+adjusted message: We need the car at 49% battery for the morning commute to work.
+transcription:  We need the car at 33% battery for the morning commute to work.
+adjusted message: We need the car at 33% battery for the morning commute to work.
+transcription:  We need the car at 11% battery level before leaving for work.
+adjusted message: We need the car at 11% battery level before leaving for work. (No change needed as there are no time or percentage values with formatting issues.)
+predicted:
+{'end_charge_level': 0.11}
+actual:
+{'end_charge_level': 0.11}
+prompt: Example Request: We need the car at 11% battery level before leaving for work.
+
+transcription:  We need the car at 72% battery for the drive to work.
+adjusted message: We need the car at 72% battery for the drive to work.
+transcription:  We need the car at 80% battery for the commute to work.
+adjusted message: We need the car at 80% battery for the commute to work.
+transcription:  We need the car at 74% battery when picking up the kids from school.
+adjusted message: We need the car at 74% battery when picking up the kids from school.
+transcription:  We need the car at 83% battery for the school pickup at 3pm.
+adjusted message: We need the car at 83% battery for the school pickup at 3:00 PM.
+transcription:  We need the car at 43% battery for the morning commute to work.
+adjusted message: We need the car at 43% battery for the morning commute to work.
+transcription:  We need the car at 51% battery to drive to work tomorrow.
+adjusted message: We need the car at 51% battery to drive to work tomorrow. (No change needed as there are no time or percentage formatting issues.)
+transcription:  We need the car at 71% battery for the journey to work tomorrow.
+adjusted message: We need the car at 71% battery for the journey to work tomorrow.
+transcription:  We need the car at 92% battery for our work commute.
+adjusted message: We need the car at 92% battery for our work commute.
+transcription:  We need the car at 10% battery when we arrive at work.
+adjusted message: We need the car at 10% battery when we arrive at work.
+transcription:  We need the car at 44% battery for the early morning commute to work.
+adjusted message: We need the car at 44% battery for the early morning commute to work.
+transcription:  We need the car at 60% battery when we arrive at work.
+adjusted message: We need the car at 60% battery when we arrive at work.
+transcription:  We need the car at 42% battery when picking up kids from school.
+adjusted message: We need the car at 42% battery when picking up kids from school. (No change needed as there are no time or percentage formatting issues.)
+transcription:  We need the car at 81% battery for our commute to work.
+adjusted message: We need the car at 8:10% battery for our commute to work.
+transcription:  We need the car at 83% battery for our commute to work.
+adjusted message: We need the car at 8:30% battery for our commute to work.
+transcription:  We need the car at 80% battery before heading to work.
+adjusted message: We need the car at 80% battery before heading to work.
+transcription:  We need the car fully charged by 12.19 AM for the early morning drive.
+adjusted message: We need the car fully charged by 12:19 AM for the early morning drive.
+transcription:  We need the car fully charged by 12.16am for the early morning commute.
+adjusted message: We need the car fully charged by 12:16 AM for the early morning commute.
+transcription:  We need the car to be fully charged by 118 AM for the early morning drive.
+adjusted message: We need the car to be fully charged by 11:08 AM for the early morning drive.
+predicted:
+{'end_charge_level': 1.0, 'end_charge_time': '0118'}
+predicted from audio:
+{'end_charge_level': 1.0, 'end_charge_time': '1108'}
+actual:
+{'end_charge_time': '0118'}
+prompt: We need the car to be fully charged by 1:18 AM for the early morning drive.
+
+transcription:  I need the car charged by 1.54 a.m. for work tomorrow.
+adjusted message: I need the car charged to 15.40% by 1:54 AM for work tomorrow.
+transcription:  We need the car fully charged by 2.26am for the early morning commute.
+adjusted message: We need the car fully charged by 2:26 AM for the early morning commute.
+transcription:  We need the car fully charged by 217 AM for the early morning road trip.
+adjusted message: We need the car fully charged by 2:17 AM for the early morning road trip.
+transcription:  We need the car to be charged by 3.29am for the early morning trip.
+adjusted message: We need the car to be charged by 3:29 AM for the early morning trip.
+transcription:  We need the car fully charged by 3.30 a.m. for an early morning commute.
+adjusted message: We need the car fully charged by 3:30 a.m. for an early morning commute.
+transcription:  We need the car charged by 452 AM for an early morning departure.
+adjusted message: We need the car charged by 4:52 AM for an early morning departure.
+transcription:  We need the car charged and ready by 4 to AM for an early morning road trip.
+adjusted message: We need the car charged and ready by 4:00 AM for an early morning road trip.
+predicted:
+{'end_charge_time': '0402', 'end_charge_level': None}
+predicted from audio:
+{'end_charge_time': '0400', 'end_charge_level': None}
+actual:
+{'end_charge_time': '0402'}
+prompt: Example Request: We need the car charged and ready by 4:02 AM for an early morning road trip.
+
+transcription:  We need the car fully charged by 538 AM for the early morning commute.
+adjusted message: We need the car fully charged by 5:38 AM for the early morning commute.
+transcription:  We need the car fully charged by 5.18am for an early morning road trip.
+adjusted message: We need the car fully charged by 5:18 AM for an early morning road trip.
+transcription:  We need the car fully charged by 616 AM for the morning commute.
+adjusted message: We need the car fully charged by 6:16 AM for the morning commute.
+transcription:  We need the car charged by 6.35am for the morning commute.
+adjusted message: We need the car charged by 6:35 AM for the morning commute.
+transcription:  We need the car fully charged by 7.30 a.m. before heading to school.
+adjusted message: We need the car fully charged by 7:30 a.m. before heading to school.
+transcription:  We need the car charged by 708 AM for the morning commute.
+adjusted message: We need the car charged by 7:08 AM for the morning commute.
+transcription:  We need the car fully charged by 8.31am for the school drop-off.
+adjusted message: We need the car fully charged by 8:31 AM for the school drop-off.
+transcription:  We need the car fully charged by 8.33 am for the morning commute.
+adjusted message: We need the car fully charged by 8:33 AM for the morning commute.
+transcription:  We need the car charged by 9.44 AM before heading to work.
+adjusted message: We need the car charged by 9:44 AM before heading to work.
+transcription:  We need the car fully charged by 9.33 a.m. for the morning commute to work.
+adjusted message: We need the car fully charged by 9:33 a.m. for the morning commute to work.
+transcription:  We need the car fully charged by 1018 AM for the morning commute.
+adjusted message: We need the car fully charged by 10:18 AM for the morning commute.
+transcription:  We need the car fully charged by 10.14 AM for the morning commute.
+adjusted message: We need the car fully charged by 10:14 AM for the morning commute.
+transcription:  We need the car fully charged by 11.07am for the road trip.
+adjusted message: We need the car fully charged by 11:07 AM for the road trip.
+transcription:  We need the car fully charged by 11.20 AM for the road trip.
+adjusted message: We need the car fully charged by 11:20 AM for the road trip.
+transcription:  We need the car charged by 12.11 pm for the meeting.
+adjusted message: We need the car charged by 12:11 PM for the meeting.
+transcription:  We need the car charged by 12 7 pm for our meeting at the office.
+adjusted message: We need the car charged by 12:07 PM for our meeting at the office.
+transcription:  We need the car charged by 142 pm for the meeting.
+adjusted message: We need the car charged by 14:20 PM for the meeting.
+predicted:
+{'end_charge_time': '1442'}
+predicted from audio:
+{'end_charge_time': '1420'}
+actual:
+{'end_charge_time': '1342'}
+prompt: We need the car charged by 1:42 PM for the meeting.
+
+transcription:  We need the car fully charged by 137pm for our road trip.
+adjusted message: We need the car fully charged by 1:37 PM for our road trip.
+transcription:  We need the car fully charged by 2.10 pm for the road trip.
+adjusted message: We need the car fully charged by 2:10 PM for the road trip.
+transcription:  We need the car fully charged before leaving for work at 2.01 pm.
+adjusted message: We need the car fully charged before leaving for work at 2:01 PM.
+transcription:  We need the car fully charged by 3.37 pm for school pickup.
+adjusted message: We need the car fully charged by 3:37 PM for school pickup.
+transcription:  We need the car fully charged by 3 1 pm for school pickup.
+adjusted message: We need the car fully charged by 3:01 PM for school pickup.
+transcription:  We need the car charge by 4.20pm to pick up the kids from school.
+adjusted message: We need the car charge by 4:20 PM to pick up the kids from school.
+transcription:  We need the car fully charged by 4.23 pm to go to work.
+adjusted message: We need the car fully charged by 4:23 PM to go to work.
+transcription:  We need the car charged by 502pm to pick up kids from school.
+adjusted message: We need the car charged by 5:02 PM to pick up kids from school.
+transcription:  We need the car fully charged by 5.39 pm for our trip to the countryside.
+adjusted message: We need the car fully charged by 5:39 PM for our trip to the countryside.
+transcription:  We need the car fully charged by 6.46 pm for the party.
+adjusted message: We need the car fully charged by 6:46 PM for the party.
+transcription:  We need the car fully charged by 6.54pm for the evening party.
+adjusted message: We need the car fully charged by 6:54 PM for the evening party.
+transcription:  We need the car fully charged by 7.23 pm for the road trip.
+adjusted message: We need the car fully charged by 7:23 PM for the road trip.
+transcription:  We need the car fully charged by 706pm for the party.
+adjusted message: We need the car fully charged by 7:06 PM for the party.
+transcription:  Example user request. We need the car fully charged by 8.20pm for the trip.
+adjusted message: We need the car fully charged by 8:20 PM for the trip.
+transcription:  We need the car fully charged for the party at 8.19 pm.
+adjusted message: We need the car fully charged for the party at 8:19 PM.
+transcription:  We need the car fully charged by 9.54 pm for our overnight road trip.
+adjusted message: We need the car fully charged by 9:54 PM for our overnight road trip.
+transcription:  We need the car fully charged by 9.58 pm for the night drive.
+adjusted message: We need the car fully charged by 9:58 PM for the night drive.
+transcription:  We need the car fully charged by 10.45 pm before leaving for our road trip.
+adjusted message: We need the car fully charged by 10:45 PM before leaving for our road trip.
+transcription:  We need to have the car charged by 10.44 pm for the night drive.
+adjusted message: We need to have the car charged by 10:44 PM for the night drive.
+transcription:  We need the car fully charged by 11.12 pm for the late night drive.
+adjusted message: We need the car fully charged by 11:12 PM for the late night drive.
+transcription:  We need the car to be fully charged by 11 PM for the road trip.
+adjusted message: We need the car to be fully charged by 11:00 PM for the road trip.
+correct_count:195, incorrect_count: 3
+correct_count_audio:183, incorrect_count_audio: 15

@@ -1,0 +1,7 @@
+{
+    "end_charge_time": "0530",
+    "end_charge_time_desc": "Time by which car should be charged, in 24 hour format",
+
+    "end_charge_level": 0.95,
+    "end_charge_level_desc": "Desired end charge level, in percentage"
+}
