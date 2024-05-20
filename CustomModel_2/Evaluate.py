@@ -57,13 +57,15 @@ Answer JSON:
 fourBit_config = BitsAndBytesConfig(load_in_4bit=True,bnb_4bit_compute_dtype=torch.float16)
 eightBit_config = BitsAndBytesConfig(load_in_8bit=True)
 
-voices = ['alloy','echo','shimmer','fable','onyx','nova']
+
 
 def generate_audio_file(
     message : str,
     path : 'temp.WAV'
     ):
     speech_file_path_object = Path(path)
+
+    voices = ['alloy','echo','shimmer','fable','onyx','nova']
 
     voice = random.choice(voices)
     response = openai.audio.speech.create(

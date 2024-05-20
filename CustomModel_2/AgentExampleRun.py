@@ -70,11 +70,11 @@ if __name__ == '__main__':
 
     # Agent - Model
     agent = ChargingAgent(
-        name="Tesla Charging Example",
         example_qa=example_qa,
         json_filepath=params_filepath,
-        quantize=fourBit_config,
-        model_name = "microsoft/Phi-3-mini-4k-instruct"
+        quantize=eightBit_config,
+        model_name = "microsoft/Phi-3-mini-4k-instruct",
+        get_logits=True
         # evaluate=True
     )
 

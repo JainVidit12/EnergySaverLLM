@@ -4,6 +4,11 @@ import json
 import datetime
 import os
 import torch
+import torch.nn.functional as F
+
+import pandas as pd
+import numpy as np
+
 
 from AudioProcessor import AudioProcessor
 
@@ -70,17 +75,135 @@ Charge the car by 10:15 AM.
 
 <|assistant|>
 """
+class CustomGenerationPipeline():
+    def __init__(
+        self,
+        model,
+        tokenizer,
+        save_logits : Optional[bool],
+        device : Optional[str],
+        
+    ):
+        self._model = model
+        self._tokenizer = tokenizer
+        self._save_logits = False
+        
+        if save_logits is not None:
+            self._save_logits = save_logits
+            if self._save_logits:
+                self.df_logits = pd.DataFrame()
+        self._device = device
+        
+
+    def __call__(
+        self,
+        message : str,
+        addl_logs : Optional[dict],
+        generation_config : dict = {
+            "max_new_tokens": 50,
+            
+            "output_scores": True,
+            "return_dict_in_generate" : True
+        },
+    ):
+        input_ids = self._tokenizer(message, return_tensors="pt").to(self._device)
+        prompt_length = input_ids['input_ids'].shape[1]
+
+
+        outputs = self._model.generate(**input_ids, **generation_config)
+        generated_seq = outputs.sequences[0, prompt_length:]
+
+        generated_text = self._tokenizer.decode(generated_seq, skip_special_tokens=True)
+        generated_text = generated_text.split('\n')[0]
+        if generation_config.get('return_dict_in_generate', False) and generation_config.get('output_scores', False):
+            logits = outputs.scores
+            if self._save_logits:
+                
+                
+                # Convert logits to a numpy array
+                logits_array = np.array([logit.cpu().numpy() for logit in logits])
+
+                # Reshape the logits to match the format (steps, vocabulary size)
+                num_steps = logits_array.shape[0]
+                vocab_size = logits_array.shape[-1]
+                logits_reshaped = logits_array.reshape(num_steps, vocab_size)
+
+                # Get the generated token IDs (excluding the initial input)
+                generated_token_ids = generated_seq.cpu().numpy()
+
+                # Calculate perplexity for each generated token
+                perplexities = []
+                winning_tokens = []
+                for step, token_id in enumerate(generated_token_ids):
+                    logit_step = logits_reshaped[step]
+                    prob_step = F.softmax(torch.tensor(logit_step), dim=-1).numpy()
+                    token_prob = prob_step[token_id]
+
+                    highest_prob_token_id = prob_step.argmax()
+                    highest_prob_token = self._tokenizer.decode([highest_prob_token_id], skip_special_tokens = False)
+                    winning_tokens.append(highest_prob_token)
+
+                    token_perplexity = np.exp(-np.log(token_prob))
+                    perplexities.append(token_perplexity)
+
+                # Create a DataFrame from the logits
+                df_logits = pd.DataFrame(logits_reshaped)
+
+                # Optional: Add column names corresponding to token IDs
+                df_logits.columns = [f"token_{i}" for i in range(vocab_size)]
+
+                # Add the perplexities column
+                df_logits['perplexity'] = perplexities
+                df_logits['winning_token'] = winning_tokens
+                df_logits['final_text'] = generated_text
+
+                for key, value in addl_logs.items():
+                    df_logits[key] = value
+
+
+                self.df_logits = pd.concat([self.df_logits, df_logits], ignore_index=True)
+            else:
+                return outputs
+        
+        return generated_text
+
+    def saveLogits(
+        self,
+        filename : str,
+        clear : bool = False
+    ):
+        self.df_logits.to_csv('filename')
+        if clear:
+            self.df_logits = self.df_logits.iloc[0:0]
+
+    def getCompactPPL(
+        self,
+        addl_cols : Optional[list] = []
+    ):
+        addl_cols.extend(['winning_token','perplexity','final_text'])
+        if self._save_logits:
+            return self.df_logits[addl_cols]
+        return None
+
+
 
 class ChargingAgent():
 
     def __init__(
         self,
-        model_name : Optional[str] = "google/codegemma-2b",
+        model_name : Optional[str] = "microsoft/Phi-3-mini-4k-instruct",
         example_qa="",
         json_filepath="",
         evaluate=False,
         quantize = None,
-        **kwargs
+        generation_args : Optional[dict] = {
+                "max_new_tokens": 50,
+                "return_full_text": False,
+                "temperature": 0.0001,
+                "do_sample": True,
+                "output_scores": True,
+            },
+        get_logits : Optional[bool] = False,
     ):
 
         
@@ -105,24 +228,39 @@ class ChargingAgent():
 
         self._tokenizer = AutoTokenizer.from_pretrained(model_name)
 
-        self._pipe = pipeline(
-            "text-generation",
+        self._pipe = CustomGenerationPipeline(
             model = self._model,
             tokenizer = self._tokenizer,
+            device = "cuda",
+            save_logits=get_logits
         )
 
-        self._generation_args = {
-            "max_new_tokens": 50,
-            "return_full_text": False,
-            "temperature": 0.0001,
-            "do_sample": True,
-        }
+        self._generation_args = generation_args
         
         self._audio_processor = AudioProcessor(gpu_no = 1)
 
         self._json_filepath = json_filepath
         with open(json_filepath, 'r') as f:
             self._json_str = f.read()
+
+    def chat_intermediate(
+        self,
+        message : str,
+        addl_logs : Optional[dict],
+    ):
+        message_to_adjust = SYSTEM_MSG_TIME_ADJUST.format(
+                request = message
+            )
+
+        message = self._pipe(
+            message_to_adjust, 
+            generation_config = self._generation_args, 
+            addl_logs = addl_logs
+            )
+
+        # message = intermediate_output[0]['generated_text']
+        message = message.partition('\n')[0]  
+        return message
 
     def chat(
         self,
@@ -131,18 +269,7 @@ class ChargingAgent():
         if '.wav' in message  or '.WAV' in message:
             message = self._audio_processor.processAudio(message)
         
-
-            message_to_adjust = SYSTEM_MSG_TIME_ADJUST.format(
-                request = message
-            )
-
-            intermediate_output = self._pipe(message_to_adjust, **self._generation_args)
-
-            message = intermediate_output[0]['generated_text']
-            message = message.partition('\n')[0]  
-            print("adjusted message: " + message)
-
-
+            message = chat_intermediate(message)
         
         message = SYSTEM_MSG.format(
             json = self._json_str,
@@ -151,13 +278,13 @@ class ChargingAgent():
         )
         # input_ids = self._tokenizer(message, return_tensors="pt").to("cuda")
 
-        # outputs = self._model.generate(**input_ids, max_new_tokens = 50)
+        # outputs = self._model.generate(**input_ids, max_new_tokens = 50, return_dic)
 
         # output_text = self._tokenizer.decode(outputs[0])
 
-        output = self._pipe(message, **self._generation_args)
+        output_text = self._pipe(message, self._generation_args)
 
-        output_text = output[0]['generated_text']
+        # output_text = output[0]['generated_text']
 
         # print(f"output string: {output_text}")
 
@@ -183,6 +310,8 @@ class ChargingAgent():
     
     def getModel(self):
         return self._model
+    def getPipe(self):
+        return self._pipe
 
 
 def _replace_json(json_str: str, json_filepath: str):

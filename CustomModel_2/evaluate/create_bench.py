@@ -10,16 +10,26 @@ import requests  # for loading the example source code
 import json
 import openai
 
+import pandas as pd
+from AudioProcessor import AudioProcessor
+from augment_bench import Augment
+
+
 example_qa = """
 ----------
 Param Update: ```JSON
 "end_charge_time": "0900"```
-Example User request: We will leave for the event at 9 AM.
+Example Request: We will leave for the event at 9:00 AM.
 ----------
 Param Update: ```JSON
 "end_charge_time": "1345",
 "end_charge_level":0.89```
 Example Request: We need the car at 89% battery by 1:45 PM.
+----------
+Param Update: ```JSON
+"end_charge_time": "1945",
+"end_charge_level":0.89```
+Example Request: We need the car at 89% battery by 7:45 PM.
 ----------
 Param Update: ```JSON
 "end_charge_level":1```
@@ -43,7 +53,7 @@ The JSON for updated parameter:
 user_message = """
 {json}
 
-Describe the change:
+Example Request:
 """
 param_change_json_time = """```JSON
 "end_charge_time": "{new_val_time}"
@@ -67,90 +77,128 @@ f.close()
 system_message = SYSTEM_MSG.format(example_qa = example_qa, json = params_json)
 
 values_time = np.arange(0, 24, 1)
-values_level = np.random.randint(10, 100, 50)
 
-benchmark_dataset_time = []
-benchmark_dataset_level = []
-benchmark_dataset = []
+
+benchmark_dataset = pd.DataFrame(columns = ['prompt','json','transcribed_prompt', 'hour_val', 'level_val', 'is_adjusted'])
 
 client = openai.OpenAI()
 
-model = "gpt-3.5-turbo"
+model = "gpt-4"
 
-for val in values_time:
-    minutes_sampled = np.random.randint(0, 59, 2)
+audio_processor = AudioProcessor()
+augmentation = Augment(client = client, model = model)
+
+for hour_val in values_time:
+    minutes_sampled = np.random.randint(0, 59, 10)
     for minute in minutes_sampled:
-        minute_str = str(minute)
-        if minute < 10:
-            minute_str = "0" + minute_str
-        
-        hour_str = str(val)
-        if val < 10:
-            hour_str = "0" + hour_str
+        values_level = np.random.randint(10, 100, 10)
+        for level_val in values_level:
+            
+            minute_str = str(minute)
+            if minute < 10:
+                minute_str = "0" + minute_str
+            
+            hour_str = str(hour_val)
+            if hour_val < 10:
+                hour_str = "0" + hour_str
 
-        timestamp = hour_str + minute_str
-        
-        param_change_json_this = param_change_json_time.format(new_val_time = timestamp)
-        
-        message = [
-            {"role" : "system", "content" : system_message},
-            {"role" : "user", "content" : user_message.format(json = param_change_json_this)}
-        ]
-        response = client.chat.completions.create( model=model, messages=message)
+            timestamp = hour_str + minute_str
 
-        prompt = response.choices[0].message.content
-        benchmark_dataset_time.append({
-            "json":param_change_json_this,
-            "prompt":prompt
-        })
-        # break
+
+            val_str = "{:.2f}".format(level_val / 100.0)
+            
+            param_change_json = param_change_json_both.format(new_val_time = timestamp, new_val_level = val_str)
+            
+            message = [
+                {"role" : "system", "content" : system_message},
+                {"role" : "user", "content" : user_message.format(json = param_change_json)}
+            ]
+            response = client.chat.completions.create( model=model, messages=message)
+
+            prompt = response.choices[0].message.content
+
+            transcribed_prompt = audio_processor.generate_transcribed_text(prompt)
+
+            adjusted_prompt = augmentation.perform_augment(prompt)
+
+            transcribed_adjusted_prompt = audio_processor.generate_transcribed_text(adjusted_prompt)
+
+            benchmark_dataset.loc[len(benchmark_dataset)] = {
+                    'prompt' : prompt,
+                    'json' : param_change_json,
+                    'transcribed_prompt': transcribed_prompt,
+                    'hour_val' : hour_val,
+                    'level_val' : level_val,
+                    'is_adjusted' : False
+                }
+            
+            benchmark_dataset.loc[len(benchmark_dataset)] = {
+                    'prompt' : adjusted_prompt,
+                    'json' : param_change_json_both,
+                    'transcribed_prompt': transcribed_adjusted_prompt,
+                    'hour_val' : hour_val,
+                    'level_val' : level_val,
+                    'is_adjusted' : True
+                }
+            # print(benchmark_dataset.head())
+            if len(benchmark_dataset) % 100 == 0:
+                print(len(benchmark_dataset))
+    #         break
+    #     break
     # break
+    benchmark_dataset.to_parquet('benchmark_large.parquet')
+    with open('benchmark_large.json', 'w') as f:
+        json.dump(benchmark_dataset.to_dict('records'), f, indent=4)
+    print("written")
 
 
-for val in values_level:
+
+
+
+# for val in values_level:
     
-    val_str = "{:.2f}".format(val / 100.0)
-    param_change_json_this = param_change_json_level.format(new_val_level = val_str)
+#     val_str = "{:.2f}".format(val / 100.0)
+#     param_change_json_this = param_change_json_level.format(new_val_level = val_str)
     
-    message = [
-        {"role" : "system", "content" : system_message},
-        {"role" : "user", "content" : user_message.format(json = param_change_json_this)}
-    ]
-    response = client.chat.completions.create( model=model, messages=message)
+#     message = [
+#         {"role" : "system", "content" : system_message},
+#         {"role" : "user", "content" : user_message.format(json = param_change_json_this)}
+#     ]
+#     response = client.chat.completions.create( model=model, messages=message)
 
-    prompt = response.choices[0].message.content
-    benchmark_dataset_level.append({
-        "json":param_change_json_this,
-        "prompt":prompt
-    })
-    # break
+#     prompt = response.choices[0].message.content
+#     benchmark_dataset_level.append({
+#         "json":param_change_json_this,
+#         "prompt":prompt
+#     })
+#     # break
     
-for _ in range(100):
-    sample_time = random.choice(benchmark_dataset_time)['json']
-    sample_level = random.choice(benchmark_dataset_level)['json']
+# for _ in range(100):
+#     sample_time = random.choice(benchmark_dataset_time)['json']
+#     sample_level = random.choice(benchmark_dataset_level)['json']
 
-    new_json = sample_time + sample_level
+#     new_json = sample_time + sample_level
 
-    new_json = new_json.replace("\n``````JSON", ",")
+#     new_json = new_json.replace("\n``````JSON", ",")
 
-    # print(sample)
+#     # print(sample)
 
-    message = [
-        {"role" : "system", "content" : system_message},
-        {"role" : "user", "content" : user_message.format(json = new_json)}
-    ]
-    response = client.chat.completions.create( model=model, messages=message)
+#     message = [
+#         {"role" : "system", "content" : system_message},
+#         {"role" : "user", "content" : user_message.format(json = new_json)}
+#     ]
+#     response = client.chat.completions.create( model=model, messages=message)
 
-    prompt = response.choices[0].message.content
-    benchmark_dataset.append({
-        "json":new_json,
-        "prompt":prompt
-    })
-    # break
+#     prompt = response.choices[0].message.content
+#     benchmark_dataset.append({
+#         "json":new_json,
+#         "prompt":prompt
+#     })
+#     # break
     
-benchmark_dataset.extend(benchmark_dataset_level)
-benchmark_dataset.extend(benchmark_dataset_time)
+# benchmark_dataset.extend(benchmark_dataset_level)
+# benchmark_dataset.extend(benchmark_dataset_time)
 
-with open('benchmark.json', 'w') as f:
-    json.dump(benchmark_dataset, f, indent=4)
+# with open('benchmark_large.json', 'w') as f:
+#     json.dump(benchmark_dataset, f, indent=4)
 

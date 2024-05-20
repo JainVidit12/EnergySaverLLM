@@ -1,0 +1,1386 @@
+[
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1401\",\n\"end_charge_level\": 0.55\n```",
+        "prompt": "We need the car at 55% battery by 2:01 PM for the afternoon meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0635\",\n\"end_charge_level\": 0.98\n```",
+        "prompt": "We need the car at 98% battery by 6:35 AM for the morning commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0538\",\n\"end_charge_level\": 0.72\n```",
+        "prompt": "We need the car at 72% battery by 5:38 AM for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0518\",\n\"end_charge_level\": 0.98\n```",
+        "prompt": "We need the car at 98% battery by 5:18 AM for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1120\",\n\"end_charge_level\": 0.82\n```",
+        "prompt": "We need the car at 82% battery by 11:20 AM to go to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0944\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery by 9:44 AM for the morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0118\",\n\"end_charge_level\": 0.21\n```",
+        "prompt": "We need the car at 21% battery by 1:18 AM for the early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1906\",\n\"end_charge_level\": 0.29\n```",
+        "prompt": "We will need the car at 29% battery by 7:06 PM for the commute home."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1120\",\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery by 11:20 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1537\",\n\"end_charge_level\": 0.10\n```",
+        "prompt": "We need the car at 10% battery by 3:37 PM for the school pickup."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2300\",\n\"end_charge_level\": 0.92\n```",
+        "prompt": "We need the car at 92% battery by 11:00 PM for the overnight charging."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0118\",\n\"end_charge_level\": 0.41\n```",
+        "prompt": "We need the car at 41% battery by 01:18 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0518\",\n\"end_charge_level\": 0.51\n```",
+        "prompt": "We need the car at 51% battery by 5:18 AM for the early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0635\",\n\"end_charge_level\": 0.21\n```",
+        "prompt": "We need the car at 21% battery by 6:35 AM for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0329\",\n\"end_charge_level\": 0.44\n```",
+        "prompt": "We need the car at 44% battery by 3:29 AM for an early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1410\",\n\"end_charge_level\": 0.92\n```",
+        "prompt": "We need the car at 92% battery by 2:10 PM for the trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1702\",\n\"end_charge_level\": 0.16\n```",
+        "prompt": "We need the car at 16% battery by 5:02 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1739\",\n\"end_charge_level\": 0.60\n```",
+        "prompt": "We need the car at 60% battery by 5:39 PM for our commute home."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0226\",\n\"end_charge_level\": 0.10\n```",
+        "prompt": "We need the car at 10% battery by 2:26 AM for an early morning departure."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1854\",\n\"end_charge_level\": 0.54\n```",
+        "prompt": "We need the car at 54% battery by 6:54 PM for the drive home."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1401\",\n\"end_charge_level\": 0.76\n```",
+        "prompt": "We need the car at 76% battery by 2:01 PM for the school pickup."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1107\",\n\"end_charge_level\": 0.83\n```",
+        "prompt": "We need the car at 83% battery by 11:07 AM for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1018\",\n\"end_charge_level\": 0.11\n```",
+        "prompt": "We need the car at 11% battery by 10:18 AM for the morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0329\",\n\"end_charge_level\": 0.11\n```",
+        "prompt": "We need the car at 11% battery by 3:29 AM for an early morning drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0330\",\n\"end_charge_level\": 0.11\n```",
+        "prompt": "We need the car at 11% battery by 3:30 AM for an early morning drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0226\",\n\"end_charge_level\": 0.49\n```",
+        "prompt": "We need the car at 49% battery by 2:26 AM for an early morning departure."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0402\",\n\"end_charge_level\": 0.51\n```",
+        "prompt": "We need the car at 51% battery by 4:02 AM for an early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1401\",\n\"end_charge_level\": 0.11\n```",
+        "prompt": "We need the car at 11% charge by 2:01 PM for a school pick-up."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1846\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery by 6:46 PM for our dinner reservation."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1207\",\n\"end_charge_level\": 0.38\n```",
+        "prompt": "We need the car at 38% battery by 12:07 PM for our meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1620\",\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery by 4:20 PM for a meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0833\",\n\"end_charge_level\": 0.67\n```",
+        "prompt": "We need the car at 67% battery by 8:33 AM before heading to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2020\",\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery by 8:20 PM for the dinner party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0019\",\n\"end_charge_level\": 0.31\n```",
+        "prompt": "We need the car at 31% battery by 12:19 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1623\",\n\"end_charge_level\": 0.41\n```",
+        "prompt": "We need the car at 41% battery by 4:23 PM when heading to the school."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1211\",\n\"end_charge_level\": 0.67\n```",
+        "prompt": "We need the car at 67% battery by 12:11 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0944\",\n\"end_charge_level\": 0.43\n```",
+        "prompt": "We need the car at 43% battery by 9:44 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1211\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery by 12:11 PM for our lunch meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2019\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery by 8:19 PM for the dinner party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0616\",\n\"end_charge_level\": 0.81\n```",
+        "prompt": "We need the car at 81% battery by 6:16 AM for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2244\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery by 10:44 PM for the overnight charging."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1923\",\n\"end_charge_level\": 0.74\n```",
+        "prompt": "Example Request: We need the car at 74% battery by 7:23 PM for the dinner party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0833\",\n\"end_charge_level\": 0.98\n```",
+        "prompt": "We need the car at 98% battery by 8:33 AM for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1906\",\n\"end_charge_level\": 0.82\n```",
+        "prompt": "We need the car charged to 82% by 7:06 PM for the dinner party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2019\",\n\"end_charge_level\": 0.65\n```",
+        "prompt": "We need the car at 65% battery by 8:19 PM for the dinner party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1702\",\n\"end_charge_level\": 0.41\n```",
+        "prompt": "We need the car at 41% battery by 5:02 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1337\",\n\"end_charge_level\": 0.71\n```",
+        "prompt": "We need the car at 71% battery by 1:37 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2312\",\n\"end_charge_level\": 0.98\n```",
+        "prompt": "We need the car at 98% battery by 11:12 PM for the late-night drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1537\",\n\"end_charge_level\": 0.23\n```",
+        "prompt": "Example Request: We need the car at 23% battery by 3:37 PM for the school pickup."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1702\",\n\"end_charge_level\": 0.72\n```",
+        "prompt": "We need the car at 72% battery by 5:02 PM for our work commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0330\",\n\"end_charge_level\": 0.43\n```",
+        "prompt": "We need the car at 43% battery by 3:30 AM for an early morning departure."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0452\",\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery by 4:52 AM for an early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0831\",\n\"end_charge_level\": 0.29\n```",
+        "prompt": "We need the car at 29% battery by 8:31 AM for the morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0016\",\n\"end_charge_level\": 0.41\n```",
+        "prompt": "We need the car at 41% battery by 12:16 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0518\",\n\"end_charge_level\": 0.82\n```",
+        "prompt": "We need the car at 82% battery by 5:18 AM for work tomorrow."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1623\",\n\"end_charge_level\": 0.84\n```",
+        "prompt": "We need the car at 84% battery by 4:23 PM for our work meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1211\",\n\"end_charge_level\": 0.88\n```",
+        "prompt": "We must have the car at 88% battery by 12:11 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1739\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car to be at 80% battery by 5:39 PM for our trip to the school."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1923\",\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery by 7:23 PM for the party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1120\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery by 11:20 AM for the meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2158\",\n\"end_charge_level\": 0.41\n```",
+        "prompt": "We need the car at 41% battery by 9:58 PM for the movie night."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1018\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car charged to 80% by 10:18 AM for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0226\",\n\"end_charge_level\": 0.43\n```",
+        "prompt": "We need the car at 43% battery by 2:26 AM for our early morning departure."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0154\",\n\"end_charge_level\": 0.98\n```",
+        "prompt": "We need the car at 98% battery by 1:54 AM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0402\",\n\"end_charge_level\": 0.60\n```",
+        "prompt": "We need the car charged to 60% by 4:02 AM for the early morning drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1018\",\n\"end_charge_level\": 0.29\n```",
+        "prompt": "We need the car to be at 29% battery by 10:18 AM for a meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0616\",\n\"end_charge_level\": 0.44\n```",
+        "prompt": "We need the car to be at 44% battery by 6:16 AM for the morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2244\",\n\"end_charge_level\": 0.76\n```",
+        "prompt": "We need the car at 76% battery by 10:44 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0330\",\n\"end_charge_level\": 0.72\n```",
+        "prompt": "We need the car at 72% battery by 3:30 AM for an early morning road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1337\",\n\"end_charge_level\": 0.72\n```",
+        "prompt": "We need the car at 72% battery by 1:37 PM for a meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0944\",\n\"end_charge_level\": 0.41\n```",
+        "prompt": "We need the car at 41% battery by 9:44 AM for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0329\",\n\"end_charge_level\": 0.65\n```",
+        "prompt": "We need the car at 65% battery by 3:29 AM for an early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1401\",\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery by 2:01 PM for the school pickup."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2244\",\n\"end_charge_level\": 0.11\n```",
+        "prompt": "We need the car to be charged to 11% by 10:44 PM for a late-night drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1014\",\n\"end_charge_level\": 0.83\n```",
+        "prompt": "We need the car at 83% battery by 10:14 AM for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0616\",\n\"end_charge_level\": 0.54\n```",
+        "prompt": "Example Request: We need the car at 54% battery by 6:16 AM for the morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1739\",\n\"end_charge_level\": 0.86\n```",
+        "prompt": "We need the car at 86% battery by 5:39 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0518\",\n\"end_charge_level\": 0.84\n```",
+        "prompt": "We need the car at 84% battery by 5:18 AM for an early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1410\",\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery by 2:10 PM for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1854\",\n\"end_charge_level\": 0.51\n```",
+        "prompt": "We need the car at 51% battery by 6:54 PM for the work commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1906\",\n\"end_charge_level\": 0.60\n```",
+        "prompt": "We need the car at 60% battery by 7:06 PM for our dinner reservation."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2154\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery by 9:54 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0330\",\n\"end_charge_level\": 0.72\n```",
+        "prompt": "We need the car at 72% battery by 3:30 AM for an early morning road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0831\",\n\"end_charge_level\": 0.60\n```",
+        "prompt": "Example Request: We need the car at 60% battery by 8:31 AM to commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1342\",\n\"end_charge_level\": 0.57\n```",
+        "prompt": "We need the car at 57% battery by 1:42 PM for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1207\",\n\"end_charge_level\": 0.67\n```",
+        "prompt": "We need the car at 67% battery by 12:07 PM for our work meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1014\",\n\"end_charge_level\": 0.44\n```",
+        "prompt": "We need the car at 44% battery by 10:14 AM for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1410\",\n\"end_charge_level\": 0.51\n```",
+        "prompt": "We need the car at 51% battery by 2:10 PM for our work meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0330\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery by 3:30 AM for an early morning journey."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0708\",\n\"end_charge_level\": 0.49\n```",
+        "prompt": "We need the car at 49% battery by 7:08 AM for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0330\",\n\"end_charge_level\": 0.11\n```",
+        "prompt": "We need the car at 11% battery by 3:30 AM for an early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1207\",\n\"end_charge_level\": 0.90\n```",
+        "prompt": "We need the car at 90% battery by 12:07 PM for the work meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0538\",\n\"end_charge_level\": 0.44\n```",
+        "prompt": "We need the car at 44% battery by 5:38 AM for an early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0330\",\n\"end_charge_level\": 0.90\n```",
+        "prompt": "We need the car at 90% battery by 3:30 AM for an early morning road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1342\",\n\"end_charge_level\": 0.47\n```",
+        "prompt": "We need the car at 47% battery by 1:42 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0635\",\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery by 6:35 AM for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0452\",\n\"end_charge_level\": 0.90\n```",
+        "prompt": "We need to be at 90% battery by 4:52 AM for an early start."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1107\",\n\"end_charge_level\": 0.51\n```",
+        "prompt": "We need the car at 51% battery by 11:07 AM for our work meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0016\",\n\"end_charge_level\": 0.58\n```",
+        "prompt": "We need the car at 58% battery by 12:16 AM for the overnight charging."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2020\",\n\"end_charge_level\": 0.90\n```",
+        "prompt": "We need the car at 90% battery by 8:20 PM for the party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.21\n```",
+        "prompt": "We need the car at 21% battery when leaving work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.98\n```",
+        "prompt": "We need the car at 98% battery for our commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.72\n```",
+        "prompt": "We need the car at 72% battery when we arrive at the school."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.55\n```",
+        "prompt": "We need the car at 55% battery for the morning commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.76\n```",
+        "prompt": "We need the car at 76% battery by the time school ends."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery for the commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.51\n```",
+        "prompt": "Example Request: We only need the car with 51% charge for the short trip to the grocery store."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.57\n```",
+        "prompt": "We need the car at 57% battery for the road trip to the beach."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.67\n```",
+        "prompt": "We need the car at 67% battery when leaving for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.31\n```",
+        "prompt": "We need the car at 31% battery when we arrive at work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.29\n```",
+        "prompt": "We need the car at 29% battery for the work meeting tomorrow morning."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.84\n```",
+        "prompt": "Example Request: We need the car at 84% battery when we arrive at work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.23\n```",
+        "prompt": "Need the car to be charged to 23% by the time you get to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.42\n```",
+        "prompt": "Example Request: We need the car at 42% battery when we leave for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.54\n```",
+        "prompt": "We need the car at 54% battery for the morning commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.41\n```",
+        "prompt": "We need the car at 41% battery before leaving for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.51\n```",
+        "prompt": "Example Request: We need the car at 51% battery for the school pick-up."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.65\n```",
+        "prompt": "Example Request: We need the car at 65% battery before going to work tomorrow."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.86\n```",
+        "prompt": "We need the car at 86% battery for our trip to the school."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.41\n```",
+        "prompt": "We need the car at 41% battery for the commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.82\n```",
+        "prompt": "Example Request: We need the car at 82% battery for the school pickup."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.38\n```",
+        "prompt": "We need the car at 38% battery when we arrive at school."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.88\n```",
+        "prompt": "We need the car at 88% battery when going to work tomorrow."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.16\n```",
+        "prompt": "We need the car at 16% battery before leaving for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.78\n```",
+        "prompt": "We need the car at 78% battery for the trip to the grocery store."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.86\n```",
+        "prompt": "We need the car at 86% battery when we arrive at the school."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.58\n```",
+        "prompt": "We need the car at 58% battery when we arrive at work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery for the morning commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.90\n```",
+        "prompt": "We need the car at 90% battery level before leaving for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.47\n```",
+        "prompt": "We need the car at 47% battery when we leave for work tomorrow."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.35\n```",
+        "prompt": "We need the car at 35% battery for the commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.11\n```",
+        "prompt": "We need the car at 11% battery for the morning commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.49\n```",
+        "prompt": "We need the car at 49% battery for the morning commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.33\n```",
+        "prompt": "We need the car at 33% battery for the morning commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.11\n```",
+        "prompt": "Example Request: We need the car at 11% battery level before leaving for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.72\n```",
+        "prompt": "We need the car at 72% battery for the drive to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery for the commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.74\n```",
+        "prompt": "Example Request: We need the car at 74% battery when picking up the kids from school."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.83\n```",
+        "prompt": "We need the car at 83% battery for the school pick-up at 3:00 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.43\n```",
+        "prompt": "We need the car at 43% battery for the morning commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.51\n```",
+        "prompt": "Example Request: We need the car at 51% battery to drive to work tomorrow."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.71\n```",
+        "prompt": "We need the car at 71% battery for the journey to work tomorrow."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.92\n```",
+        "prompt": "We need the car at 92% battery for our work commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.10\n```",
+        "prompt": "We need the car at 10% battery when we arrive at work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.44\n```",
+        "prompt": "We need the car at 44% battery for the early morning commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.60\n```",
+        "prompt": "We need the car at 60% battery when we arrive at work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery when picking up kids from school."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.81\n```",
+        "prompt": "Example Request: We need the car at 81% battery for our commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.83\n```",
+        "prompt": "Example Request: We need the car at 83% battery for our commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery before heading to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0019\"\n```",
+        "prompt": "We need the car fully charged by 12:19 AM for the early morning drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0016\"\n```",
+        "prompt": "We need the car fully charged by 12:16 AM for the early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0118\"\n```",
+        "prompt": "We need the car to be fully charged by 1:18 AM for the early morning drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0154\"\n```",
+        "prompt": "Example Request: I need the car charged by 1:54 AM for work tomorrow."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0226\"\n```",
+        "prompt": "We need the car fully charged by 2:26 AM for the early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0217\"\n```",
+        "prompt": "We need the car fully charged by 2:17 AM for the early morning road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0329\"\n```",
+        "prompt": "We need the car to be charged by 3:29 AM for the early morning trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0330\"\n```",
+        "prompt": "We need the car fully charged by 3:30 AM for an early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0452\"\n```",
+        "prompt": "We need the car charged by 4:52 AM for an early morning departure."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0402\"\n```",
+        "prompt": "Example Request: We need the car charged and ready by 4:02 AM for an early morning road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0538\"\n```",
+        "prompt": "We need the car fully charged by 5:38 AM for the early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0518\"\n```",
+        "prompt": "We need the car fully charged by 5:18 AM for an early morning road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0616\"\n```",
+        "prompt": "We need the car fully charged by 6:16 AM for the morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0635\"\n```",
+        "prompt": "We need the car charged by 6:35 AM for the morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0730\"\n```",
+        "prompt": "We need the car fully charged by 7:30 AM before heading to school."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0708\"\n```",
+        "prompt": "We need the car charged by 7:08 AM for the morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0831\"\n```",
+        "prompt": "We need the car fully charged by 8:31 AM for the school drop-off."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0833\"\n```",
+        "prompt": "We need the car fully charged by 8:33 AM for the morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0944\"\n```",
+        "prompt": "We need the car charged by 9:44 AM before heading to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0933\"\n```",
+        "prompt": "We need the car fully charged by 9:33 AM for the morning commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1018\"\n```",
+        "prompt": "We need the car fully charged by 10:18 AM for the morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1014\"\n```",
+        "prompt": "We need the car fully charged by 10:14 AM for the morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1107\"\n```",
+        "prompt": "We need the car fully charged by 11:07 AM for the road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1120\"\n```",
+        "prompt": "Example Request: We need the car fully charged by 11:20 AM for the road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1211\"\n```",
+        "prompt": "We need the car charged by 12:11 PM for the meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1207\"\n```",
+        "prompt": "Example Request: We need the car charged by 12:07 PM for our meeting at the office."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1342\"\n```",
+        "prompt": "We need the car charged by 1:42 PM for the meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1337\"\n```",
+        "prompt": "We need the car fully charged by 1:37 PM for our road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1410\"\n```",
+        "prompt": "Example Request: We need the car fully charged by 2:10 PM for the road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1401\"\n```",
+        "prompt": "We need the car fully charged before leaving for work at 2:01 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1537\"\n```",
+        "prompt": "We need the car fully charged by 3:37 PM for school pick-up."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1501\"\n```",
+        "prompt": "We need the car fully charged by 3:01 PM for school pickup."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1620\"\n```",
+        "prompt": "We need the car charged by 4:20 PM to pick up the kids from school."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1623\"\n```",
+        "prompt": "We need the car fully charged by 4:23 PM to go to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1702\"\n```",
+        "prompt": "We need the car charged by 5:02 PM to pick up kids from school."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1739\"\n```",
+        "prompt": "We need the car fully charged by 5:39 PM for our trip to the countryside."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1846\"\n```",
+        "prompt": "We need the car fully charged by 6:46 PM for the party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1854\"\n```",
+        "prompt": "We need the car fully charged by 6:54 PM for the evening party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1923\"\n```",
+        "prompt": "We need the car fully charged by 7:23 PM for the road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1906\"\n```",
+        "prompt": "We need the car fully charged by 7:06 PM for the party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2020\"\n```",
+        "prompt": "Example User Request: We need the car fully charged by 8:20 PM for the trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2019\"\n```",
+        "prompt": "We need the car fully charged for the party at 8:19 PM."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2154\"\n```",
+        "prompt": "We need the car fully charged by 9:54 PM for our overnight road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2158\"\n```",
+        "prompt": "We need the car fully charged by 9:58 PM for the night drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2245\"\n```",
+        "prompt": "We need the car fully charged by 10:45 PM before leaving for our road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2244\"\n```",
+        "prompt": "We need to have the car charged by 10:44 PM for the night drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2312\"\n```",
+        "prompt": "We need the car fully charged by 11:12 PM for the late-night drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2300\"\n```",
+        "prompt": "We need the car to be fully charged by 11:00 PM for the road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1401\",\n\"end_charge_level\": 0.55\n```",
+        "prompt": "We need the car at 55% battery by 2:01 in the evening for the afternoon meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0635\",\n\"end_charge_level\": 0.98\n```",
+        "prompt": "We need the car at 98% battery by 6:35 in the morning for the commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0538\",\n\"end_charge_level\": 0.72\n```",
+        "prompt": "We need the car at 72% battery by 5:38 in the morning for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0518\",\n\"end_charge_level\": 0.98\n```",
+        "prompt": "We need the car at 98% battery by 5:18 in the morning for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1120\",\n\"end_charge_level\": 0.82\n```",
+        "prompt": "We need the car at 82% battery by 11:20 in the morning to go to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0944\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery by 9:44 in the morning for the commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0118\",\n\"end_charge_level\": 0.21\n```",
+        "prompt": "We need the car at 21% battery by 1:18 in the morning for the early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1906\",\n\"end_charge_level\": 0.29\n```",
+        "prompt": "We will need the car at 29% battery by 7:06 in the evening for the commute home."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1120\",\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery by 11:20 in the morning."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1537\",\n\"end_charge_level\": 0.10\n```",
+        "prompt": "We need the car at 10% battery by 3:37 in the evening for the school pickup."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2300\",\n\"end_charge_level\": 0.92\n```",
+        "prompt": "We need the car at 92% battery by 11:00 in the evening for the overnight charging."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0118\",\n\"end_charge_level\": 0.41\n```",
+        "prompt": "We need the car at 41% battery by 01:18 in the morning."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0518\",\n\"end_charge_level\": 0.51\n```",
+        "prompt": "We need the car at 51% battery by 5:18 in the morning for the early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0635\",\n\"end_charge_level\": 0.21\n```",
+        "prompt": "We need the car at 21% battery by 6:35 in the morning for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0329\",\n\"end_charge_level\": 0.44\n```",
+        "prompt": "We need the car at 44% battery by 3:29 in the morning for an early commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1410\",\n\"end_charge_level\": 0.92\n```",
+        "prompt": "We need the car at 92% battery by 2:10 in the evening for the trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1702\",\n\"end_charge_level\": 0.16\n```",
+        "prompt": "We need the car at 16% battery by 5:02 in the evening."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1739\",\n\"end_charge_level\": 0.60\n```",
+        "prompt": "We need the car at 60% battery by 5:39 in the evening for our commute home."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0226\",\n\"end_charge_level\": 0.10\n```",
+        "prompt": "We need the car at 10% battery by 2:26 in the morning for an early departure."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1854\",\n\"end_charge_level\": 0.54\n```",
+        "prompt": "We need the car at 54% battery by 6:54 in the evening for the drive home."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1401\",\n\"end_charge_level\": 0.76\n```",
+        "prompt": "We need the car at 76% battery by 2:01 in the evening for the school pickup."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1107\",\n\"end_charge_level\": 0.83\n```",
+        "prompt": "We need the car at 83% battery by 11:07 in the morning for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1018\",\n\"end_charge_level\": 0.11\n```",
+        "prompt": "We need the car at 11% battery by 10:18 in the morning for the morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0329\",\n\"end_charge_level\": 0.11\n```",
+        "prompt": "We need the car at 11% battery by 3:29 in the morning for an early morning drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0330\",\n\"end_charge_level\": 0.11\n```",
+        "prompt": "We need the car at 11% battery by 3:30 in the morning for an early morning drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0226\",\n\"end_charge_level\": 0.49\n```",
+        "prompt": "We need the car at 49% battery by 2:26 in the morning for an early morning departure."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0402\",\n\"end_charge_level\": 0.51\n```",
+        "prompt": "We need the car at 51% battery by 4:02 in the morning for an early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1401\",\n\"end_charge_level\": 0.11\n```",
+        "prompt": "We need the car at 11% charge by 2:01 in the evening for a school pick-up."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1846\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery by 6:46 in the evening for our dinner reservation."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1207\",\n\"end_charge_level\": 0.38\n```",
+        "prompt": "We need the car at 38% battery by noon 07 for our meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1620\",\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery by 4:20 in the evening for a meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0833\",\n\"end_charge_level\": 0.67\n```",
+        "prompt": "We need the car at 67% battery by 8:33 in the morning before heading to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2020\",\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery by 8:20 in the evening for the dinner party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0019\",\n\"end_charge_level\": 0.31\n```",
+        "prompt": "We need the car at 31% battery by 12:19 in the morning."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1623\",\n\"end_charge_level\": 0.41\n```",
+        "prompt": "We need the car at 41% battery by 4:23 in the evening when heading to the school."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1211\",\n\"end_charge_level\": 0.67\n```",
+        "prompt": "We need the car at 67% battery by 12:11 in the noon."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0944\",\n\"end_charge_level\": 0.43\n```",
+        "prompt": "We need the car at 43% battery by 9:44 in the morning."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1211\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery by 11 minutes past noon for our lunch meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2019\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery by 8:19 in the evening for the dinner party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0616\",\n\"end_charge_level\": 0.81\n```",
+        "prompt": "We need the car at 81% battery by 6:16 in the morning for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2244\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery by 10:44 in the evening for the overnight charging."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1923\",\n\"end_charge_level\": 0.74\n```",
+        "prompt": "We need the car at 74% battery by 7:23 in the evening for the dinner party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0833\",\n\"end_charge_level\": 0.98\n```",
+        "prompt": "We need the car at 98% battery by 8:33 in the morning for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1906\",\n\"end_charge_level\": 0.82\n```",
+        "prompt": "We need the car charged to 82% by 7:06 in the evening for the dinner party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2019\",\n\"end_charge_level\": 0.65\n```",
+        "prompt": "We need the car at 65% battery by 8:19 in the evening for the dinner party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1702\",\n\"end_charge_level\": 0.41\n```",
+        "prompt": "We need the car at 41% battery by 5:02 in the evening."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1337\",\n\"end_charge_level\": 0.71\n```",
+        "prompt": "We need the car at 71% battery by 1:37 in the evening."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2312\",\n\"end_charge_level\": 0.98\n```",
+        "prompt": "We need the car at 98% battery by 11:12 in the evening for the late-night drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1537\",\n\"end_charge_level\": 0.23\n```",
+        "prompt": "We need the car at 23% battery by 3:37 in the evening for the school pickup."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1702\",\n\"end_charge_level\": 0.72\n```",
+        "prompt": "We need the car at 72% battery by 5:02 in the evening for our work commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0330\",\n\"end_charge_level\": 0.43\n```",
+        "prompt": "We need the car at 43% battery by 3:30 in the morning for an early morning departure."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0452\",\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery by 4:52 in the morning for an early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0831\",\n\"end_charge_level\": 0.29\n```",
+        "prompt": "We need the car at 29% battery by 8:31 in the morning for the morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0016\",\n\"end_charge_level\": 0.41\n```",
+        "prompt": "We need the car at 41% battery by 12:16 in the morning."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0518\",\n\"end_charge_level\": 0.82\n```",
+        "prompt": "We need the car at 82% battery by 5:18 in the morning for work tomorrow."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1623\",\n\"end_charge_level\": 0.84\n```",
+        "prompt": "We need the car at 84% battery by 4:23 in the evening for our work meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1211\",\n\"end_charge_level\": 0.88\n```",
+        "prompt": "We must have the car at 88% battery by 12:11 in the noon."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1739\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car to be at 80% battery by 5:39 in the evening for our trip to the school."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1923\",\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery by 7:23 in the evening for the party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1120\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery by 11:20 in the morning for the meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2158\",\n\"end_charge_level\": 0.41\n```",
+        "prompt": "We need the car at 41% battery by 9:58 in the evening for the movie night."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1018\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car charged to 80% by 10:18 in the morning for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0226\",\n\"end_charge_level\": 0.43\n```",
+        "prompt": "We need the car at 43% battery by 2:26 in the morning for our early morning departure."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0154\",\n\"end_charge_level\": 0.98\n```",
+        "prompt": "We need the car at 98% battery by 1:54 in the morning."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0402\",\n\"end_charge_level\": 0.60\n```",
+        "prompt": "We need the car charged to 60% by 4:02 in the morning for the early drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1018\",\n\"end_charge_level\": 0.29\n```",
+        "prompt": "We need the car to be at 29% battery by 10:18 in the morning for a meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0616\",\n\"end_charge_level\": 0.44\n```",
+        "prompt": "We need the car to be at 44% battery by 6:16 in the morning for the commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2244\",\n\"end_charge_level\": 0.76\n```",
+        "prompt": "We need the car at 76% battery by 10:44 in the evening."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0330\",\n\"end_charge_level\": 0.72\n```",
+        "prompt": "We need the car at 72% battery by 3:30 in the morning for an early morning road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1337\",\n\"end_charge_level\": 0.72\n```",
+        "prompt": "We need the car at 72% battery by 1:37 in the evening for a meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0944\",\n\"end_charge_level\": 0.41\n```",
+        "prompt": "We need the car at 41% battery by 9:44 in the morning for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0329\",\n\"end_charge_level\": 0.65\n```",
+        "prompt": "We need the car at 65% battery by 3:29 in the morning for an early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1401\",\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery by 2:01 in the evening for the school pickup."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2244\",\n\"end_charge_level\": 0.11\n```",
+        "prompt": "We need the car to be charged to 11% by 10:44 in the evening for a late-night drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1014\",\n\"end_charge_level\": 0.83\n```",
+        "prompt": "We need the car at 83% battery by 10:14 in the morning for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0616\",\n\"end_charge_level\": 0.54\n```",
+        "prompt": "We need the car at 54% battery by 6:16 in the morning for the commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1739\",\n\"end_charge_level\": 0.86\n```",
+        "prompt": "We need the car at 86% battery by 5:39 in the evening."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0518\",\n\"end_charge_level\": 0.84\n```",
+        "prompt": "We need the car at 84% battery by 5:18 in the morning for an early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1410\",\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery by 2:10 in the evening for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1854\",\n\"end_charge_level\": 0.51\n```",
+        "prompt": "We need the car at 51% battery by 6:54 in the evening for the work commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1906\",\n\"end_charge_level\": 0.60\n```",
+        "prompt": "We need the car at 60% battery by 7:06 in the evening for our dinner reservation."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2154\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery by 9:54 in the evening."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0330\",\n\"end_charge_level\": 0.72\n```",
+        "prompt": "We need the car at 72% battery by 3:30 in the morning for an early morning road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0831\",\n\"end_charge_level\": 0.60\n```",
+        "prompt": "We need the car at 60% battery by 8:31 in the morning to commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1342\",\n\"end_charge_level\": 0.57\n```",
+        "prompt": "We need the car at 57% battery by 1:42 in the evening for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1207\",\n\"end_charge_level\": 0.67\n```",
+        "prompt": "We need the car at 67% battery by noon 07 for our work meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1014\",\n\"end_charge_level\": 0.44\n```",
+        "prompt": "We need the car at 44% battery by 10:14 in the morning for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1410\",\n\"end_charge_level\": 0.51\n```",
+        "prompt": "We need the car at 51% battery by 2:10 in the evening for our work meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0330\",\n\"end_charge_level\": 0.80\n```",
+        "prompt": "We need the car at 80% battery by 3:30 in the morning for an early morning journey."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0708\",\n\"end_charge_level\": 0.49\n```",
+        "prompt": "We need the car at 49% battery by 7:08 in the morning for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0330\",\n\"end_charge_level\": 0.11\n```",
+        "prompt": "We need the car at 11% battery by 3:30 in the morning for an early commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1207\",\n\"end_charge_level\": 0.90\n```",
+        "prompt": "We need the car at 90% battery by noon for the work meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0538\",\n\"end_charge_level\": 0.44\n```",
+        "prompt": "We need the car at 44% battery by 5:38 in the morning for an early commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0330\",\n\"end_charge_level\": 0.90\n```",
+        "prompt": "We need the car at 90% battery by 3:30 in the morning for an early morning road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1342\",\n\"end_charge_level\": 0.47\n```",
+        "prompt": "We need the car at 47% battery by 1:42 in the evening."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0635\",\n\"end_charge_level\": 0.42\n```",
+        "prompt": "We need the car at 42% battery by 6:35 in the morning for work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0452\",\n\"end_charge_level\": 0.90\n```",
+        "prompt": "We need to be at 90% battery by 4:52 in the morning for an early start."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1107\",\n\"end_charge_level\": 0.51\n```",
+        "prompt": "We need the car at 51% battery by 11:07 in the morning for our work meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0016\",\n\"end_charge_level\": 0.58\n```",
+        "prompt": "We need the car at 58% battery by 16 past midnight for the overnight charging."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2020\",\n\"end_charge_level\": 0.90\n```",
+        "prompt": "We need the car at 90% battery by 8:20 in the evening for the party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0019\"\n```",
+        "prompt": "We need the car fully charged by 12:19 in the morning for the early morning drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0016\"\n```",
+        "prompt": "We need the car fully charged by 12:16 in the morning for the early commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0118\"\n```",
+        "prompt": "We need the car to be fully charged by 1:18 in the morning for the early morning drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0154\"\n```",
+        "prompt": "I need the car charged by 1:54 in the morning for work tomorrow."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0226\"\n```",
+        "prompt": "We need the car fully charged by 2:26 in the morning for the early morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0217\"\n```",
+        "prompt": "We need the car fully charged by 2:17 in the morning for the early morning road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0329\"\n```",
+        "prompt": "We need the car to be charged by 3:29 in the morning for the early morning trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0330\"\n```",
+        "prompt": "We need the car fully charged by 3:30 in the morning for an early commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0452\"\n```",
+        "prompt": "We need the car charged by 4:52 in the morning for an early departure."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0402\"\n```",
+        "prompt": "We need the car charged and ready by 4:02 in the morning for an early road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0538\"\n```",
+        "prompt": "We need the car fully charged by 5:38 in the morning for the early commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0518\"\n```",
+        "prompt": "We need the car fully charged by 5:18 in the morning for an early road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0616\"\n```",
+        "prompt": "We need the car fully charged by 6:16 in the morning for the morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0635\"\n```",
+        "prompt": "We need the car charged by 6:35 in the morning for the commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0730\"\n```",
+        "prompt": "We need the car fully charged by 7:30 in the morning before heading to school."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0708\"\n```",
+        "prompt": "We need the car charged by 7:08 in the morning for the commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0831\"\n```",
+        "prompt": "We need the car fully charged by 8:31 in the morning for the school drop-off."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0833\"\n```",
+        "prompt": "We need the car fully charged by 8:33 in the morning for the morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0944\"\n```",
+        "prompt": "We need the car charged by 9:44 in the morning before heading to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"0933\"\n```",
+        "prompt": "We need the car fully charged by 9:33 in the morning for the commute to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1018\"\n```",
+        "prompt": "We need the car fully charged by 10:18 in the morning for the commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1014\"\n```",
+        "prompt": "We need the car fully charged by 10:14 in the morning for the morning commute."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1107\"\n```",
+        "prompt": "We need the car fully charged by 11:07 in the morning for the road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1120\"\n```",
+        "prompt": "We need the car fully charged by 11:20 in the morning for the road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1211\"\n```",
+        "prompt": "We need the car charged by 12:11 in the noon for the meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1207\"\n```",
+        "prompt": "We need the car charged by noon 07 for our meeting at the office."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1342\"\n```",
+        "prompt": "We need the car charged by 1:42 in the evening for the meeting."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1337\"\n```",
+        "prompt": "We need the car fully charged by 1:37 in the evening for our road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1410\"\n```",
+        "prompt": "We need the car fully charged by 2:10 in the evening for the road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1401\"\n```",
+        "prompt": "We need the car fully charged before leaving for work at 2:01 in the evening."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1537\"\n```",
+        "prompt": "We need the car fully charged by 3:37 in the evening for school pick-up."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1501\"\n```",
+        "prompt": "We need the car fully charged by 3:01 in the evening for school pickup."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1620\"\n```",
+        "prompt": "We need the car charged by 4:20 in the evening to pick up the kids from school."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1623\"\n```",
+        "prompt": "We need the car fully charged by 4:23 in the evening to go to work."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1702\"\n```",
+        "prompt": "We need the car charged by 5:02 in the evening to pick up kids from school."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1739\"\n```",
+        "prompt": "We need the car fully charged by 5:39 in the evening for our trip to the countryside."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1846\"\n```",
+        "prompt": "We need the car fully charged by 6:46 in the evening for the party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1854\"\n```",
+        "prompt": "We need the car fully charged by 6:54 in the evening for the party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1923\"\n```",
+        "prompt": "We need the car fully charged by evening 7:23 for the road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"1906\"\n```",
+        "prompt": "We need the car fully charged by evening 7:06 for the party."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2020\"\n```",
+        "prompt": "We need the car fully charged by 8:20 in the evening for the trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2019\"\n```",
+        "prompt": "We need the car fully charged for the party at 8:19 in the evening."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2154\"\n```",
+        "prompt": "We need the car fully charged by 9:54 in the evening for our overnight road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2158\"\n```",
+        "prompt": "We need the car fully charged by 9:58 in the evening for the night drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2245\"\n```",
+        "prompt": "We need the car fully charged by 10:45 in the evening before leaving for our road trip."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2244\"\n```",
+        "prompt": "We need to have the car charged by 10:44 in the evening for the night drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2312\"\n```",
+        "prompt": "We need the car fully charged by 11:12 in the evening for the late-night drive."
+    },
+    {
+        "json": "```JSON\n\"end_charge_time\": \"2300\"\n```",
+        "prompt": "We need the car to be fully charged by 11:00 in the evening for the road trip."
+    }
+]
